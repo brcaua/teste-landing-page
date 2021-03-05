@@ -50,12 +50,6 @@ export const Label = styled.label`
   font-family: "Gilroy";
   font-weight: 520;
 `;
-export const Links = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-  margin-bottom: 40px;
-`;
 export const Login = styled.button`
   padding: 10px 20px;
   display: flex;
@@ -68,28 +62,5 @@ export const Login = styled.button`
   font-size: 14px;
   :hover {
     box-shadow: inset 0 0 1.5em #e0004d, 0 0 1.5em #e0004d;
-  }
-`;
-export const Signup = styled.button`
-  padding: 9px 10px;
-  align-self: flex-start;
-  background-color: #e0004d;
-  color: white;
-  border: 2px solid #e0004d;
-  border-radius: 16px;
-  font-weight: bold;
-  font-size: 14px;
-  :hover {
-    box-shadow: inset 0 0 1.5em #e0004d, 0 0 1.5em #e0004d;
-  }
-`;
-export const ForgetPassword = styled.a`
-  margin: 0 auto;
-  width: 150px;
-  height: 30px;
-  align-items: center;
-  font-weight: 520;
-  :hover {
-    border-bottom: 3px solid #e0004d;
   }
 `;
