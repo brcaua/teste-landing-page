@@ -34,16 +34,23 @@ export default class Input extends Component {
       phone: this.state.phone,
     };
 
-    let res = await api(
-      {
+    api({
         method: "POST",
         url: "/test",
         headers: {},
         data: user
       }
-    );
+    ).then(res => {
+        alert(
+            `Solicitação enviada com sucesso, em instantes você receberá uma chamada no número ${this.state.phone}`
+        );
+        console.log(res);
+    }).catch(err => {
+        alert(
+            err.message
+        );
+    })
     
-    console.log(res);
   };
 
   render() {
@@ -53,7 +60,7 @@ export default class Input extends Component {
           <Img src={Animation} />
         </Banner>
         <Form onSubmit={this.handleSubmit}>
-          <Title>Enviar solicitação</Title>
+          <Title>Solicitar Demonstração</Title>
           <Label htmlFor="name">Primeiro nome</Label>
           <Inputs
             type="text"
@@ -74,13 +81,9 @@ export default class Input extends Component {
             onChange={this.handleChangePhone}
           />
           <Login
-            onClick={() => {
-              alert(
-                `Solicitação enviada com sucesso, em instantes você receberá uma chamada no número ${this.state.phone}`
-              );
-            }}
+            onClick={this.handleSubmit}
           >
-            Ligar
+            Solicitar
           </Login>
         </Form>
       </Homepage>
