@@ -18,8 +18,11 @@ export default class Input extends Component {
     phone: "",
   };
 
-  handleChange = (event) => {
+  handleChangeName = (event) => {
     this.setState({ name: event.target.value });
+  };
+
+  handleChangePhone = (event) => {
     this.setState({ phone: event.target.value });
   };
 
@@ -34,18 +37,12 @@ export default class Input extends Component {
     let res = await api(
       {
         method: "POST",
-        url: "http://73a2f37ca657.ngrok.io/test",
-        headers: {
-          "content-type": "application/x-www-form-urlencoded",
-          "Access-Control-Allow-Origin": "*",
-        },
-        data: {
-          name: "teste",
-          phone: "...",
-        },
-      },
-      user
+        url: "/test",
+        headers: {},
+        data: user
+      }
     );
+    
     console.log(res);
   };
 
@@ -64,7 +61,7 @@ export default class Input extends Component {
             id="name"
             placeholder="Digite o seu primeiro nome"
             required
-            onChange={this.handleChange}
+            onChange={this.handleChangeName}
           />
           <Label htmlFor="phone">Telefone</Label>
           <Inputs
@@ -74,7 +71,7 @@ export default class Input extends Component {
             required
             inputmode="numeric"
             placeholder="(99) 99999-9999"
-            onChange={this.handleChange}
+            onChange={this.handleChangePhone}
           />
           <Login
             onClick={() => {
