@@ -18,14 +18,17 @@ export default class Input extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
+    this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
     this.state = {
       isVerified: false,
+      name: "",
+      phone: "",
     };
   }
-  state = {
-    name: "",
-    phone: "",
-  };
+  recaptchaLoaded() {
+    console.log('capcha successfully loaded');
+  }
+
   handleClick() {
     if (this.state.isVerified) {
       alert(
@@ -44,9 +47,6 @@ export default class Input extends Component {
   }
   handleChange = (event) => {
     this.setState({ name: event.target.value });
-  };
-
-  handleChangePhone = (event) => {
     this.setState({ phone: event.target.value });
   };
 
@@ -57,7 +57,7 @@ export default class Input extends Component {
       phone: this.state.phone,
     };
 
-    api(
+    let res = await api(
       {
         method: "POST",
         url: "http://73a2f37ca657.ngrok.io/test",
@@ -72,6 +72,8 @@ export default class Input extends Component {
       },
       user
     );
+
+    console.log(res);
   };
 
   render() {
@@ -107,6 +109,7 @@ export default class Input extends Component {
               sitekey="6LfmlXgaAAAAAN7dT0YW3XbJ5l-P0Ep9YqQKmQEx"
               render="explicit"
               verifyCallback={this.verifyCallback}
+              onloadCallback={this.recaptchaLoaded}
             />
           </Form>
         </Homepage>
