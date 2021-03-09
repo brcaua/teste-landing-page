@@ -44,6 +44,9 @@ export default class Input extends Component {
   }
   handleChange = (event) => {
     this.setState({ name: event.target.value });
+  };
+
+  handleChangePhone = (event) => {
     this.setState({ phone: event.target.value });
   };
 
@@ -54,7 +57,7 @@ export default class Input extends Component {
       phone: this.state.phone,
     };
 
-    let res = await api(
+    api(
       {
         method: "POST",
         url: "http://73a2f37ca657.ngrok.io/test",
@@ -69,8 +72,6 @@ export default class Input extends Component {
       },
       user
     );
-
-    console.log(res);
   };
 
   render() {
