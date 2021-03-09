@@ -30,7 +30,6 @@ export const Form = styled.form`
 `;
 export const Title = styled.h1`
   font-size: 36px;
-  font-family: "Gilroy";
   margin-bottom: 15px;
 `;
 export const Inputs = styled.input`
@@ -47,11 +46,11 @@ export const Label = styled.label`
   display: flex;
   align-self: flex-start;
   font-size: 16px;
-  font-family: "Gilroy";
-  font-weight: 520;
+  font-weight: 200;
 `;
 export const Login = styled.button`
   padding: 10px 20px;
+  margin-bottom: 20px;
   display: flex;
   align-self: flex-end;
   background-color: #e0004d;
@@ -63,4 +62,8 @@ export const Login = styled.button`
   :hover {
     box-shadow: inset 0 0 1.5em #e0004d, 0 0 1.5em #e0004d;
   }
+`;
+
+export const Recaptcha = styled.div`
+  width: 100px;
 `;
