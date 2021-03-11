@@ -1,10 +1,10 @@
+import CallForm from "./components/CallForm";
 import "./App.css";
-import Input from "./components/Input";
 
 function App() {
   return (
     <div className="App">
-      <Input />
+      <CallForm />
     </div>
   );
 }

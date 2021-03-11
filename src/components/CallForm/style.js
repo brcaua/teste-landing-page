@@ -17,11 +17,11 @@ export const Banner = styled.div`
   :hover {
     box-shadow: inset 0 0 3em #e0004d, 0 0 3em #e0004d;
   }
-`;
-export const Img = styled.img`
-  width: 200px;
-  height: 200px;
-  filter: brightness(0) invert(1);
+  img {
+    width: 200px;
+    height: 200px;
+    filter: brightness(0) invert(1);
+  }
 `;
 export const Form = styled.form`
   display: flex;
@@ -32,7 +32,7 @@ export const Title = styled.h1`
   font-size: 36px;
   margin-bottom: 15px;
 `;
-export const Inputs = styled.input`
+export const Input = styled.input`
   padding: 10px 12px;
   margin-bottom: 15px;
   margin-top: 8px;
@@ -62,8 +62,4 @@ export const Login = styled.button`
   :hover {
     box-shadow: inset 0 0 1.5em #e0004d, 0 0 1.5em #e0004d;
   }
-`;
-
-export const Recaptcha = styled.div`
-  width: 100px;
 `;
