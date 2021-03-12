@@ -59,6 +59,7 @@ export const Login = styled.button`
   font-weight: bold;
   border-radius: 16px;
   font-size: 14px;
+  cursor: pointer;
   :hover {
     box-shadow: inset 0 0 1.5em #e0004d, 0 0 1.5em #e0004d;
   }
