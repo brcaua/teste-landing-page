@@ -34,6 +34,7 @@ export const Title = styled.h1`
 `;
 export const Input = styled.input`
   padding: 10px 12px;
+  width: 100%;
   margin-bottom: 15px;
   margin-top: 8px;
   border: none;
@@ -42,6 +43,19 @@ export const Input = styled.input`
     box-shadow: 1em #e0004d;
   }
 `;
+
+export const InputStyle = {
+  padding: "10px 12px",
+  width: "100%",
+  marginBottom: "15px",
+  marginTop: "8px",
+  border: "none",
+  borderRadius: "16px",
+  hover: {
+    boxShadow: "1em #e0004d"
+  }
+}
+
 export const Label = styled.label`
   display: flex;
   align-self: flex-start;

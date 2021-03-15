@@ -1,133 +1,167 @@
 import { useEffect, useState } from "react";
-import { Homepage, Banner, Title, Form, Label, Input, Login } from "./style";
+import { Homepage, Banner, Title, Form, Label, Input, Login, InputStyle } from "./style";
 import Animation from "../../assets/animation.svg";
+import api from "../../services/api";
+import MaskInput from 'react-maskinput';
 
 
 const SITE_KEY = "6LdyTnsaAAAAAOhcw2-Hltlbtl-WkWV38ad5LptS";
 
 export default function CallForm() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [response, setResponse] = useState(null);
 
-  useEffect(() => {
+    const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [response, setResponse] = useState(null);
+
+    useEffect(() => {
     const loadScriptByURL = (id, url, callback) => {
-      const isScriptExist = document.getElementById(id);
+        const isScriptExist = document.getElementById(id);
 
-      if (!isScriptExist) {
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = url;
-        script.id = id;
-        script.onload = function () {
-          if (callback) callback();
-        };
-        document.body.appendChild(script);
-      }
+        if (!isScriptExist) {
+            var script = document.createElement("script");
 
-      if (isScriptExist && callback) callback();
+            script.type = "text/javascript";
+            script.src = url;
+            script.id = id;
+
+            script.onload = function () {
+                if (callback) callback();
+            };
+            
+            document.body.appendChild(script);
+        }
+
+        if (isScriptExist && callback) callback();
     };
 
     // load the script by passing the URL
     loadScriptByURL(
-      "recaptcha-key",
-      `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`,
-      function () {
-        console.log("Script loaded!");
-      }
+        "recaptcha-key",
+        `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`,
+        function () {
+            console.log("Script loaded!");
+        }
     );
-  }, []);
+    }, []);
 
-  const handleOnClick = (e) => {
-    e.preventDefault();
-    // Pelo que entendi da sua implementação, aqui entraria uma validação dos campos nome e email,
-    // antes mesmo de recuperar o token do recaptcha. O Token vc só adquire se os campos do form estiverem
-    // válidos e no momento que ele faz a solicitação, pois isso evita que ele expire antes de ser enviado ao backend.
-    var pattern = new RegExp(
-      /\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/
+	const submitData = (event) => {
+		event.preventDefault();
+
+		event.target.className += " was-validated";
+
+        if(event.target[1].value.length < 13) {
+            alert('O campo de telefone deve conter 11 números');
+            return;
+        }
+		
+		if (event.target.checkValidity()) {
+			console.log("dispatch an action");
+
+            window.grecaptcha
+            .execute(SITE_KEY, { action: "submit" })
+            .then(async (token) => {
+                console.log('Este é o Token', token);
+
+                try {
+                    setLoading(true);
+    
+                    let response = await api("/test", {
+                        method: "POST",
+                        headers: {
+                            "content-type": "application/json",
+                            "Access-Control-Allow-Origin": "*",
+                        },
+                        data: {
+                            name: name,
+                            phone: phone,
+                            "g-recaptcha-response": token,
+                        },
+                    });
+
+                    console.log('RESPONSE', response);
+    
+                    setLoading(false);
+                    setResponse(
+                    "Solicitação enviada com sucesso. Você receberá uma chamada em instantes!"
+                    );
+
+                } catch(err) {
+                    setLoading(false);
+                    setResponse(
+                    "Desculpe, não conseguimos completar sua solicitação, tente mais tarde!"
+                    );
+                }   
+            }).catch(err => {
+                setResponse(
+                "Desculpe, não conseguimos completar sua solicitação, tente mais tarde!"
+                );
+            })
+		}
+	};
+
+    return (
+        <Homepage>
+        <Banner>
+            <img src={Animation} alt="Logo" />
+        </Banner>
+        <Form onSubmit={submitData} noValidate className="needs-validation">
+            <Title>Enviar solicitação</Title>
+            <div className="form-group">
+                <Label htmlFor="name">Primeiro Nome: </Label>
+                <Input
+                id="name"
+                className="form-control"
+                type="text"
+                placeholder="Digite o seu primeiro nome"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+                required
+                />
+                <div className="invalid-feedback">
+                O campo nome é obrigatório.
+                </div>
+            </div>
+            <div className="form-group">
+                <Label htmlFor="phone">Telefone: </Label>
+                {/* <Input
+                required
+                type="phone"
+                onChange={(e) => setPhone(e.target.value)}
+                value={phone}
+                maxLength="10"
+                placeholder="(93) 9999-9999"
+                /> */}
+                <MaskInput
+                    id="phone"
+                    required
+                    placeholder="(99)999999999"
+                    className="form-control"
+                    style={InputStyle}
+                    // alwaysShowMask
+                    type="text"
+                    onChange={(e) => setPhone(e.target.value)}
+                    maskChar=""
+                    mask="(00)000000000"
+                    minLength="5"
+                    size={11}
+                    value="phone"
+                />
+                <div className="invalid-feedback">
+                O campo telefone é obrigatório.
+                </div>
+            </div>
+            <Login disabled={loading} type="submit">
+            {loading ? "Solicitando..." : "Solicitar"}
+            </Login>
+            <br />
+            <br />
+            {response && (
+            <label>
+                <pre style={{color: "white"}}>{response}</pre>
+            </label>
+            )}
+        </Form>
+        </Homepage>
     );
-
-    if (name === "") {
-      alert("Validation failed! Input cannot be empty.");
-    }
-    if (!pattern.test(phone)) {
-      alert("ok");
-    } else {
-      window.grecaptcha.ready(() => {
-        window.grecaptcha
-          .execute(SITE_KEY, { action: "submit" })
-          .then((token) => {
-            submitData(token);
-          });
-      });
-      alert(
-        "Solicitação enviada com sucesso. Você receberá uma chamada em instantes!"
-      );
-    }
-  };
-  const submitData = (token) => {
-    // call a backend API to verify reCAPTCHA response
-    fetch(`${window.location.protocol}//${window.location.host}/test`, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-      body: JSON.stringify({
-        name: name,
-        phone: phone,
-        "g-recaptcha-response": token,
-      }),
-    })
-      .then((res) => {
-        setLoading(false);
-        setResponse(
-          "Solicitação enviada com sucesso. Você receberá uma chamada em instantes!"
-        );
-      })
-      .catch((err) => {
-        setLoading(false);
-        setResponse(
-          "Desculpe, não conseguimos completar sua solicitação, tente mais tarde"
-        );
-      });
-  };
-  return (
-    <Homepage>
-      <Banner>
-        <img src={Animation} alt="Logo" />
-      </Banner>
-      <Form onSubmit={submitData}>
-        <Title>Enviar solicitação</Title>
-        <Label>Primeiro Nome: </Label>
-        <Input
-          type="text"
-          placeholder="Digite o seu primeiro nome"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-          required
-        />
-        <Label>Telefone: </Label>
-        <Input
-          required
-          type="tel"
-          onChange={(e) => setPhone(e.target.value)}
-          value={phone}
-          placeholder="(93) 9999-9999"
-          // mask={'(99)\\ 99999-9999'}
-        />
-        <Login onClick={handleOnClick} disabled={loading}>
-          {loading ? "Solicitando..." : "Solicitar"}
-        </Login>
-        <br />
-        <br />
-        {response && (
-          <label>
-            <pre>{response}</pre>
-          </label>
-        )}
-      </Form>
-    </Homepage>
-  );
 }

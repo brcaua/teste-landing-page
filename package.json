@@ -10,19 +10,22 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
     "chokidar": "^3.5.1",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "react-google-invisible-recaptcha": "^0.2.11",
     "react-google-recaptcha": "^2.1.0",
     "react-input-mask": "^2.0.4",
+    "react-maskinput": "^3.2.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.2.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp -r build/* /home/pontaltech/Workspace/pontalplay/landing-page-back/www",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
