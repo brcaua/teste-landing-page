@@ -15,47 +15,48 @@ export default function CallForm() {
     const [response, setResponse] = useState(null);
 
     useEffect(() => {
-    const loadScriptByURL = (id, url, callback) => {
-        const isScriptExist = document.getElementById(id);
+        const loadScriptByURL = (id, url, callback) => {
+            const isScriptExist = document.getElementById(id);
 
-        if (!isScriptExist) {
-            var script = document.createElement("script");
+            if (!isScriptExist) {
+                var script = document.createElement("script");
 
-            script.type = "text/javascript";
-            script.src = url;
-            script.id = id;
+                script.type = "text/javascript";
+                script.src = url;
+                script.id = id;
 
-            script.onload = function () {
-                if (callback) callback();
-            };
-            
-            document.body.appendChild(script);
-        }
+                script.onload = function () {
+                    if (callback) callback();
+                };
+                
+                document.body.appendChild(script);
+            }
 
-        if (isScriptExist && callback) callback();
-    };
+            if (isScriptExist && callback) callback();
+        };
 
-    // load the script by passing the URL
-    loadScriptByURL(
-        "recaptcha-key",
-        `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`,
-        function () {
-            console.log("Script loaded!");
-        }
-    );
+        // load the script by passing the URL
+        loadScriptByURL(
+            "recaptcha-key",
+            `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`,
+            function () {
+                console.log("Script loaded!");
+            }
+        );
     }, []);
 
 	const submitData = (event) => {
 		event.preventDefault();
 
 		event.target.className += " was-validated";
-
-        if(event.target[1].value.length < 13) {
-            alert('O campo de telefone deve conter 11 números');
-            return;
-        }
 		
 		if (event.target.checkValidity()) {
+            
+            if(event.target[1].value.length < 13) {
+                alert('O campo de telefone deve conter 11 números');
+                return;
+            }
+
 			console.log("dispatch an action");
 
             window.grecaptcha
@@ -124,14 +125,6 @@ export default function CallForm() {
             </div>
             <div className="form-group">
                 <Label htmlFor="phone">Telefone: </Label>
-                {/* <Input
-                required
-                type="phone"
-                onChange={(e) => setPhone(e.target.value)}
-                value={phone}
-                maxLength="10"
-                placeholder="(93) 9999-9999"
-                /> */}
                 <MaskInput
                     id="phone"
                     required
@@ -151,7 +144,7 @@ export default function CallForm() {
                 O campo telefone é obrigatório.
                 </div>
             </div>
-            <Login disabled={loading} type="submit">
+            <Login disabled={loading}>
             {loading ? "Solicitando..." : "Solicitar"}
             </Login>
             <br />
