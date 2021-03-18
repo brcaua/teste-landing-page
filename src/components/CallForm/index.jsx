@@ -52,8 +52,8 @@ export default function CallForm() {
 		
 		if (event.target.checkValidity()) {
             
-            if(event.target[1].value.length < 13) {
-                alert('O campo de telefone deve conter 11 números');
+            if(event.target[1].value.length != 13 && event.target[1].value.length != 12) {
+                alert('Formato incorreto. Campo: Telefone');
                 return;
             }
 
@@ -136,8 +136,7 @@ export default function CallForm() {
                     onChange={(e) => setPhone(e.target.value)}
                     maskChar=""
                     mask="(00)000000000"
-                    minLength="5"
-                    size={11}
+                    maxLength="5"
                     value="phone"
                 />
                 <div className="invalid-feedback">
