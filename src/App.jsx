@@ -2,6 +2,7 @@
 import "./App.css";
 // import CallForm from "./components/CallForm";
 // import ExampleComponent from "./components/ExampleComponent";
+import logo from './assets/pontaltech.svg';
 
 function App() {
   return (
@@ -9,28 +10,31 @@ function App() {
       {/* <CallForm /> */}
 
         {/* 1ª Sessão */}
-      <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div className="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand"><span>KLIS</span></a>
+                <a href="index.html" class="navbar-brand">
+                    <span>
+                        <img src={logo}/>
+                    </span>
+                </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="#" class="nav-item nav-link active">Home</a>
-                        <a href="#" class="nav-item nav-link">About</a>
-                        <a href="#" class="nav-item nav-link">Service</a>
-                        <a href="#" class="nav-item nav-link">Price</a>
-                        <a href="#" class="nav-item nav-link">Barber</a>
-                        <a href="#" class="nav-item nav-link">Gallery</a>
-                        <div class="nav-item dropdown">
+                        <div class="nav-item"><a href="#" class="nav-item nav-link active">Conheça e viva essa experiência</a></div>
+                        <a href="#" class="nav-item nav-link">Nossas soluções</a>
+                        <a href="#" class="nav-item nav-link">Benefícios</a>
+                        <a href="#" class="nav-item nav-link">Perguntas frequentes</a>
+                        <a href="#" class="nav-item nav-link">Contato</a>
+                        {/* <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu">
                                 <a href="blog.html" class="dropdown-item">Blog Page</a>
                                 <a href="single.html" class="dropdown-item">Single Page</a>
                             </div>
-                        </div>
+                        </div> */}
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -94,7 +98,7 @@ function App() {
         <div class="about">
             <div class="container">
                 <div class="row align-items-center">
-                    TODA LIGAÇÃO IMPORTA ...
+                    TODA LIGAÇÃO IMPORTA ... TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...TODA LIGAÇÃO IMPORTA ...
                 </div>
             </div>
         </div>
