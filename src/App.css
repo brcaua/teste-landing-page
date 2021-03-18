@@ -3,16 +3,628 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: Gotham;
 }
-
 .App {
-  /* text-align: center;
-  background-color: #ffffff;
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  /* text-align: center;
+  background-color: #ffffff;
   align-items: center;
   justify-content: center;
   color: white; */
+}
+/* Header */
+.navbar {
+  background: #ed2e46 !important;
+  padding: 5px 15px;
+}
+.navbar .nav-item {
+  text-transform: uppercase;
+  text-decoration: dotted;
+}
+.navbar .navbar-brand span {
+  margin-right: 100px;
+  margin-left: 30px;
+}
+.navbar img {
+  align-items: center;
+  width: 150px;
+  text-align: center;
+}
+/* End Header */
+
+/* Banner */
+banner {
+  display: flex;
+  margin-bottom: 100px;
+}
+.banner-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-left: 40px;
+  margin-bottom: 200px;
+}
+img {
+  width: 100vw;
+  position: absolute;
+}
+.banner-card .title {
+  font-size: 6em;
+  font-weight: lighter;
+  color: #ed2e46;
+  margin-top: 150px;
+  margin-bottom: 110px;
+}
+.banner-card .title span {
+  font-weight: 550;
+  color: #432c46;
+}
+.banner-card .banner-contact {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.banner-card p {
+  font-size: 3.7em;
+  line-height: 55px;
+}
+.banner-card button {
+  width: 24rem;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 16px;
+  background-color: #432c46;
+  margin-top: 30px;
+}
+.banner-card button a {
+  color: white;
+}
+
+/* Section 3 */
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -20px;
+  margin-bottom: 100px;
+}
+.contact .call-form #title {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: auto;
+  color: #ed2e46;
+  margin-left: 30px;
+}
+.contact p:nth-child(2) {
+  text-align: justify;
+  font-size: 20px;
+  opacity: 0.7;
+  line-height: 24px;
+}
+.contact .form-header {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #432c46;
+}
+.contact .form-contact {
+  margin-left: 250px;
+}
+.contact .form-contact input {
+  width: 400px;
+  padding: 10px 60px 10px 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.contact .form-contact a {
+  padding: 10px 10px;
+}
+.contact .form-contact a img {
+  width: 40px;
+  image-rendering: optimizeQuality;
+}
+
+@media (min-width: 320px) {
+  .navbar .navbar-brand span {
+    margin-left: 5px;
+  }
+  .navbar img {
+    align-items: center;
+    width: 120px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .banner-card img {
+    height: 300px;
+  }
+  .banner-card {
+    margin-left: 0px;
+    margin-bottom: -80px;
+  }
+  .banner-card .title {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 1.7em;
+  }
+  .banner-card .banner-contact {
+    margin-top: 30px;
+  }
+  .banner-card p {
+    font-size: 0.9em;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  .banner-card button {
+    width: 6rem;
+    padding: 3px;
+    font-size: 6px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+    margin-top: -30px;
+  }
+  .banner-card button a {
+    color: white;
+  }
+  .banner-card button:hover {
+    color: #ed2e46;
+  }
+
+  .contact {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contact .call-form #title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+    color: #ed2e46;
+  }
+  .contact p:nth-child(2) {
+    text-align: justify;
+    font-size: 10px;
+    margin: 5px 10px 20px;
+    opacity: 0.7;
+    line-height: 14px;
+  }
+  .contact .form-header {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #432c46;
+  }
+  .contact .form-contact {
+    margin-top: 20px;
+  }
+  .contact .form-contact input {
+    width: 190px;
+    padding: 2px 40px 2px 5px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+  .contact .form-contact a {
+    padding: 10px 10px;
+  }
+  .contact .form-contact a img {
+    width: 25px;
+    image-rendering: optimizeQuality;
+  }
+}
+
+@media (min-width: 480px) {
+  .navbar .navbar-brand span {
+    margin-left: 20px;
+  }
+  .navbar img {
+    align-items: center;
+    width: 120px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .banner-card img {
+    height: 300px;
+  }
+  .banner-card {
+    margin-left: 20px;
+  }
+  .banner-card .title {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+  }
+  .banner-card .banner-contact {
+    margin-top: 40px;
+  }
+  .banner-card p {
+    font-size: 1.3em;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .banner-card button {
+    width: 8rem;
+    padding: 3px;
+    font-size: 6px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+    margin-top: -10px;
+  }
+  .banner-card button a {
+    color: white;
+  }
+  .banner-card button:hover {
+    color: #ed2e46;
+  }
+
+  .contact {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .contact .call-form #title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+    color: #ed2e46;
+  }
+  .contact p:nth-child(2) {
+    text-align: justify;
+    font-size: 12px;
+    margin: 5px 20px 20px;
+    opacity: 0.7;
+    line-height: 14px;
+  }
+  .contact .form-header {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #432c46;
+    margin: auto 50px;
+  }
+  .contact .form-contact {
+    margin-top: 20px;
+  }
+  .contact .form-contact input {
+    width: 220px;
+    padding: 5px 60px 5px 5px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+  .contact .form-contact a {
+    padding: 10px 10px;
+  }
+  .contact .form-contact a img {
+    width: 25px;
+    image-rendering: optimizeQuality;
+  }
+}
+@media (min-width: 600px) {
+  .banner-card .title {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 3em;
+  }
+  .banner-card .banner-contact {
+    margin-top: 50px;
+  }
+  .banner-card p {
+    font-size: 1.6em;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .banner-card button {
+    width: 12rem;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+  }
+  .banner-card button a {
+    color: white;
+  }
+  .banner-card button:hover {
+    color: #ed2e46;
+  }
+  .contact {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  .contact .call-form #title {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+    color: #ed2e46;
+  }
+  .contact p:nth-child(2) {
+    text-align: justify;
+    font-size: 14px;
+    margin: 5px 50px 20px;
+    opacity: 0.7;
+    line-height: 14px;
+  }
+  .contact .form-header {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #432c46;
+    margin: auto 50px;
+  }
+  .contact .form-contact {
+    margin-top: 20px;
+  }
+  .contact .form-contact input {
+    width: 250px;
+    padding: 5px 60px 5px 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  .contact .form-contact a {
+    padding: 10px 10px;
+  }
+  .contact .form-contact a img {
+    width: 30px;
+    image-rendering: optimizeQuality;
+  }
+}
+@media (min-width: 801px) {
+  .navbar .navbar-brand span {
+    margin-left: 10px;
+  }
+  .navbar img {
+    align-items: center;
+    width: 120px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .banner-card img {
+    height: 300px;
+  }
+  .banner-card {
+    margin-left: 0px;
+  }
+  .banner-card .title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 4em;
+  }
+  .banner-card .banner-contact {
+    margin-top: 40px;
+  }
+  .banner-card p {
+    font-size: 2.4em;
+    line-height: 38px;
+    margin-bottom: 30px;
+  }
+  .banner-card button {
+    width: 16rem;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+  }
+  .banner-card button a {
+    color: white;
+  }
+  .banner-card button:hover {
+    color: #ed2e46;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .contact .call-form #title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+    color: #ed2e46;
+  }
+  .contact p:nth-child(2) {
+    text-align: justify;
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 18px;
+  }
+  .contact .form-header {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #432c46;
+    margin-bottom: 30px;
+    margin-top: -40px;
+  }
+  .contact .form-contact {
+    margin-top: -90px;
+    margin-right: -1000px;
+  }
+  .contact .form-contact input {
+    width: 300px;
+    padding: 5px 60px 5px 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  .contact .form-contact a {
+    padding: 10px 10px;
+  }
+  .contact .form-contact a img {
+    width: 30px;
+    image-rendering: optimizeQuality;
+  }
+}
+@media (min-width: 1025px) {
+  .navbar .navbar-brand span {
+    margin-left: 10px;
+  }
+  .navbar img {
+    align-items: center;
+    width: 120px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .banner-card img {
+    height: 300px;
+  }
+  .banner-card {
+    margin-left: 20px;
+  }
+  .banner-card .title {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 5.2em;
+  }
+  .banner-card .banner-contact {
+    margin-top: 40px;
+  }
+  .banner-card p {
+    font-size: 3em;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+  .banner-card button {
+    width: 16rem;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+  }
+  .banner-card button a {
+    color: white;
+  }
+  .banner-card button:hover {
+    color: #ed2e46;
+  }
+}
+@media (min-width: 1281px) {
+  .navbar .navbar-brand span {
+    margin-left: 10px;
+  }
+  .navbar img {
+    align-items: center;
+    width: 120px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .banner-card img {
+    height: 300px;
+  }
+  .banner-card {
+    margin-left: 30px;
+  }
+  .banner-card .title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 6.2em;
+  }
+  .banner-card .banner-contact {
+    margin-top: 40px;
+  }
+  .banner-card p {
+    font-size: 3.4em;
+    line-height: 54px;
+    margin-bottom: 65px;
+  }
+  .banner-card button {
+    width: 22rem;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+  }
+  .banner-card button a {
+    color: white;
+  }
+  .banner-card button:hover {
+    color: #ed2e46;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 130px;
+    margin-bottom: 100px;
+  }
+  .contact .call-form #title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+    color: #ed2e46;
+    margin-left: 30px;
+  }
+  .contact p:nth-child(2) {
+    text-align: justify;
+    font-size: 20px;
+    opacity: 0.7;
+    line-height: 24px;
+  }
+  .contact .form-header {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #432c46;
+    margin-bottom: 30px;
+    margin-top: -55px;
+  }
+  .contact .form-contact {
+    margin-top: -100px;
+    margin-left: 250px;
+  }
+  .contact .form-contact input {
+    width: 400px;
+    padding: 10px 60px 10px 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .contact .form-contact a {
+    padding: 10px 10px;
+  }
+  .contact .form-contact a img {
+    width: 40px;
+    image-rendering: optimizeQuality;
+  }
 }
