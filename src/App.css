@@ -15,12 +15,17 @@
   align-items: center;
   justify-content: center;
   color: white; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100vh;
 }
 
 body {
     /* color: #797979; */
     background: #ffffff;
-    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Gotham-Medium';
+    /* letter-spacing: .1rem; */
 }
 
 a:hover,
@@ -38,8 +43,8 @@ a:focus {
     position: absolute;
     width: 100%;
     /* top: 60px; */
-    padding: 5px 15px;
-    background: rgba(255, 0, 0, .7) !important;
+    padding: 2px 15px;
+    background: rgba(255, 0, 0, .6) !important;
     z-index: 9;
 }
 
@@ -53,14 +58,14 @@ a:focus {
 .navbar .navbar-brand {
     margin: 0;
     color: #ffffff;
-    font-size: 45px;
+    /* font-size: 45px; */
     line-height: 0px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .navbar .navbar-brand img {
     /* max-width: 100%; */
-    max-height: 30px;
+    max-height: 25px;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -88,15 +93,151 @@ a:focus {
     background: #f8f9fa;
 }
 
-@media (min-width: 992px) {
+/********* End Nav Bar *********/
+
+/* Banner */
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+    /* margin-left: 20px; */
+    background-image: url("./assets/banner.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: -100px;
+  }
+  
+  .banner .title {
+    font-size: 6em;
+    font-weight: lighter;
+    color: #ed2e46;
+    margin-top: 150px;
+    margin-bottom: 110px;
+  }
+  .banner .title span {
+    font-weight: 550;
+    color: #432c46;
+  }
+  .banner .banner-contact {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  .banner p {
+    font-size: 3.7em;
+    line-height: 55px;
+  }
+  .banner button {
+    width: 24rem;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+  }
+  .banner button a {
+    color: white;
+  }
+
+  /* Info */
+
+  .info {
+    text-align: center;
+    padding: 20px 180px;
+    background-image: linear-gradient(to bottom, white 30%, #8080801e);
+  }
+
+  .info p {
+    margin-bottom: 0;
+  }
+
+  .info .title {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #432c46;
+    /* letter-spacing: .2rem; */
+  }
+
+  .info .subtitle {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #ed2e46;
+  }
+
+  .info .description {
+    padding-top: 20px;
+    font-size: 1em;
+    color: #808080;
+  }
+
+/* Responsive CSS */ 
+
+@media (max-width: 768px) {   
     .navbar {
-        padding: 8px 60px;
+        /* padding: 2px 15px; */
+        /* background: #1d2434 !important; */
+    }
+
+    .banner {
+        padding: 0px 15px;
+    }
+
+    .info {
+        padding: 20px 15px;
+    }
+
+    .info .title {
+        font-size: 1.8em;
+    }
+
+    .info .subtitle {
+        font-size: 1em;
+    }
+
+    .info .description {
+        font-size: 0.6em;
+        }
+    
+    /* .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    } */
+}
+
+@media (min-width: 769px) {   
+    .info {
+        padding: 20px 15px;
+    }
+
+    .info .title {
+        font-size: 2.5em;
+    }
+
+    .info .subtitle {
+        font-size: 1.5em;
+    }
+
+    .info .description {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1115px) {
+    .navbar {
+        padding: 4px 60px;
         z-index: 9;
     }
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #1d2434 !important;
+        /* background: #1d2434 !important; */
     }
     
     .navbar a.nav-link {
@@ -105,21 +246,27 @@ a:focus {
         letter-spacing: 1px;
         text-transform: uppercase;
     }
+
+    .banner {
+        min-height: 900px;
+        padding: 0px 75px;
+    }
+
+    .info {
+        padding: 20px 150px;
+    }
+
+    .info .title {
+        font-size: 3.5em;
+    }
+
+    .info .subtitle {
+        font-size: 2em;
+    }
+
+    .info .description {
+        font-size: 1.5em;
+    }
 }
 
-@media (max-width: 991.98px) {   
-    .navbar {
-        /* padding: 15px; */
-        /* background: #1d2434 !important; */
-    }
-    
-    .navbar a.nav-link {
-        padding: 5px;
-    }
-    
-    .navbar .dropdown-menu {
-        box-shadow: none;
-    }
-}
-
-/********* End Nav Bar *********/
+/* END */
