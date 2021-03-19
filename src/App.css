@@ -174,6 +174,20 @@ a:focus {
     color: #808080;
   }
 
+  /*  ABOUT CSS */
+
+  .about {
+      padding: 0px 75px;
+  }
+
+  .about .description {
+    padding-top: 20px;
+    font-size: 1em;
+    color: #808080;
+  }
+
+  /*  END CSS ABOUT */
+
 /* Responsive CSS */ 
 
 @media (max-width: 768px) {   
@@ -191,16 +205,16 @@ a:focus {
     }
 
     .info .title {
-        font-size: 1.8em;
+        font-size: 1.0em;
     }
 
     .info .subtitle {
-        font-size: 1em;
+        font-size: 0.7em;
     }
 
     .info .description {
-        font-size: 0.6em;
-        }
+        font-size: 0.5em;
+    }
     
     /* .navbar a.nav-link {
         padding: 5px;
@@ -250,7 +264,11 @@ a:focus {
     .banner {
         min-height: 900px;
         padding: 0px 75px;
-    }
+    }.info .description {
+        padding-top: 20px;
+        font-size: 1em;
+        color: #808080;
+      }
 
     .info {
         padding: 20px 150px;

@@ -59,28 +59,27 @@ function App() {
             </div>
             {/* 3ª Sessão */}
             <div class="about">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-5 col-md-6">
-                            <div class="about-img">
-                                Vivencie essa experiência
-                            </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="title">
+                            <p>Vivencie essa experiência</p> 
+                            <p class="description">Informe os seus dados para vivenciar uma demonstração de como podemos garantir a satisfação de seus clientes e trazer efetividade para suas campanhas.</p> 
                         </div>
-                        <div class="col-lg-7 col-md-6">
-                            <div class="section-header text-left">
-                                {/* <p>Learn About Us</p> */}
-                                <h2>Receba uma ligação do nosso agente virtual</h2>
-                            </div>
-                            {/* <div class="about-text">
-                                <p>
-                                    .
-                                </p>
-                                <p>
-                                    .
-                                </p>
-                                <a class="btn" href="">Learn More</a>
-                            </div> */}
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="section-header text-left">
+                            {/* <p>Learn About Us</p> */}
+                            <h2>Receba uma ligação do nosso agente virtual inteligente!</h2>
                         </div>
+                        {/* <div class="about-text">
+                            <p>
+                                .
+                            </p>
+                            <p>
+                                .
+                            </p>
+                            <a class="btn" href="">Learn More</a>
+                        </div> */}
                     </div>
                 </div>
             </div>
