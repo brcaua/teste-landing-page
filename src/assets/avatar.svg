@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 112" width="111" height="112">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="55.484" y1="104.825" x2="55.484" y2="7.166">
+			<stop offset="0" stop-color="#ed2d45"  />
+			<stop offset="0.991" stop-color="#432b45"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+	</style>
+	<g id="BLOCO 7 - DEPOIMENTOS">
+		<path id="Shape 50 copy" class="shp0" d="M55.48 111.48C24.89 111.48 0 86.59 0 56C0 25.4 24.89 0.51 55.48 0.51C86.08 0.51 110.97 25.4 110.97 56C110.97 86.59 86.08 111.48 55.48 111.48ZM55.48 10.61C30.46 10.61 10.1 30.97 10.1 56C10.1 81.02 30.46 101.38 55.48 101.38C80.51 101.38 100.87 81.02 100.87 56C100.87 30.97 80.51 10.61 55.48 10.61Z" />
+	</g>
+</svg>

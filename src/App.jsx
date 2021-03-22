@@ -3,9 +3,11 @@ import "./App.css";
 // import CallForm from "./components/CallForm";
 // import ExampleComponent from "./components/ExampleComponent";
 import logo from "./assets/pontaltech.svg";
-import banner from "./assets/banner.png";
-import bannerv1 from "./assets/bannerv1.png";
 import phone from "./assets/phone.svg";
+import money from "./assets/money.svg";
+import store from "./assets/store.svg";
+import health from "./assets/health.svg";
+import avatar from "./assets/avatar.svg";
 
 function App() {
   return (
@@ -123,6 +125,264 @@ function App() {
               <strong>agentes virtuais reserva</strong>, <br></br> que entram em
               jogo automaticamente toda vez que o número de ligações atendidas{" "}
               <br></br>for maior do que os agentes virtuais contratados.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container card-benefits">
+        <p class="title">
+          BENEFÍCIOS DO AGENTE VIRTUAL INTELIGENTE PARA A SUA EMPRESA
+        </p>
+        <div class="row benefits">
+          <div class="col-sm benefit">
+            <h4>AGILIDADE</h4>
+            <p>alto poder de discagem</p>
+          </div>
+          <div class="col-sm benefit">
+            <h4>LOCALIZADOR</h4>
+            <p>encontra a pessoa certa</p>
+          </div>
+          <div class="col-sm benefit">
+            <h4>RESPEITO AO CLIENTE</h4>
+            <p>100% das ligações atendidas são conectadas</p>
+          </div>
+          <div class="col-sm benefit">
+            <h4>PRODUTIVIDADE</h4>
+            <p>otimiza o tempo de seus atendentes humanos</p>
+          </div>
+        </div>
+        <div class="row benefits">
+          <div class="col-sm benefit">
+            <h4>DASHBOARD</h4>
+            <p>
+              estrutura simples e interativa feita para transformar métricas em
+              estrátegia
+            </p>
+          </div>
+          <div class="col-sm benefit">
+            <h4>MONITORIA</h4>
+            <p>
+              acompanhamento das chamadas em módulos podendo escolher o trecho
+              da chamada
+            </p>
+          </div>
+          <div class="col-sm benefit">
+            <h4>FLUIDEZ À ROTINA</h4>
+            <p>integração multicanal com seu sistema</p>
+          </div>
+          <div class="col-sm benefit">
+            <h4>PLATAFORMA INTUITIVA</h4>
+            <p>simples e prática, a navegação é dinâmica e descomplicada</p>
+          </div>
+        </div>
+        <div class="row benefits">
+          <div class="col-sm benefit">
+            <h4>CURADORIA</h4>
+            <p>
+              fluxos de conversas únicas e estudo constante para localizar
+              pontos de melhorias
+            </p>
+          </div>
+          <div class="col-sm benefit">
+            <h4>ALERTAS</h4>
+            <p>
+              receba notificações, por e-mail ou SMS, dos seus principais
+              indicadores
+            </p>
+          </div>
+          <div class="col-sm benefit">
+            <h4>SATISFAÇÃO GARANTIDA</h4>
+            <p>efetividade em todos os antendimentos</p>
+          </div>
+          <div class="col-sm benefit">
+            <h4>100% NA NUVEM</h4>
+            <p>escalabilidade, menor investimento e maior segurança</p>
+          </div>
+        </div>
+        <a href="#">REVOLUCIONE SEU ATENDIMENTO</a>
+      </div>
+
+      <div class="container bussiness">
+        <div class="col bussiness-items" align="center">
+          <h3>PARA A SUA EMPRESA</h3>
+          <div class="col-sm">
+            <img src="" alt="" />
+            <img src={money} alt="Cobrança" />
+            <h4>COBRANÇA</h4>
+            <p>
+              Obtenha os melhores resultados e melhore a performance de suas
+              campanhas utilizando a Inteligência Artificial em conjunto com o
+              alto poder de discagem
+            </p>
+          </div>
+          <div class="col-sm">
+            <img src={store} alt="Varejo" />
+            <h4>VAREJO</h4>
+            <p>
+              Faça prospecção ativa e mantenha um bom relacionamento ao tirar
+              dúvidas, enviar pesquisas e informar promoções, tudo de forma
+              automatizada.
+            </p>
+          </div>
+          <div class="col-sm">
+            <img src={health} alt="Saúde" />
+            <h4>SAÚDE</h4>
+            <p>
+              Otimize o tempo ao atualizar cadastros, informar resultados de
+              exames e agendar consultas com seu agente virtual
+            </p>
+          </div>
+          <a href="#">QUERO SABER MAIS!</a>
+        </div>
+      </div>
+
+      {/* Section Testemonials */}
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <h1>DEPOIMENTOS</h1>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <p class="texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+              facilis praesentium ad quasi nulla voluptate quibusdam beatae
+              iusto molestiae reiciendis. Ducimus adipisci in odio alias?
+              Accusamus architecto harum asperiores omnis.
+            </p>
+            <div class="carousel-caption work d-none d-md-block">
+              <div class="person">
+                <img src={avatar} alt="" width="70px" />
+                <img
+                  src="https://media-exp1.licdn.com/dms/image/C4E03AQE_BzFWQFa3WQ/profile-displayphoto-shrink_200_200/0/1592513934648?e=1619049600&v=beta&t=nyU5jZQMoaDCGEJ6-VcaZU4jrtyGQkPZoANDtaDDTF0"
+                  alt=""
+                  width="60px"
+                />
+                <h5>Marcos Guerra</h5>
+              </div>
+              <p>Programador</p>
+            </div>
+          </div>
+          {/* <div class="carousel-item" data-bs-interval="2000">
+            <p class="texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+              facilis praesentium ad quasi nulla voluptate quibusdam beatae
+              iusto molestiae reiciendis. Ducimus adipisci in odio alias?
+              Accusamus architecto harum asperiores omnis.
+            </p>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Marcos Guerra</h5>
+              <p>Programador</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+              facilis praesentium ad quasi nulla voluptate quibusdam beatae
+              iusto molestiae reiciendis. Ducimus adipisci in odio alias?
+              Accusamus architecto harum asperiores omnis.
+            </p>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Marcos Guerra</h5>
+              <p>Programador</p>
+            </div>
+          </div> */}
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      {/* Footer */}
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body" align="center">
+            <img src={logo} alt="" width="200px" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">PRODUTOS</h5>
+            <a class="card-text" href="#">
+              Cultura
+            </a>
+            <a class="card-text" href="#">
+              Carreiras
+            </a>
+            <a class="card-text" href="#">
+              Endereço
+            </a>
+            <a class="card-text" href="#">
+              Contato
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">SOBRE NÓS</h5>
+            <a class="card-text" href="#">
+              Cultura
+            </a>
+            <a class="card-text" href="#">
+              Carreiras
+            </a>
+            <a class="card-text" href="#">
+              Endereço
+            </a>
+            <a class="card-text" href="#">
+              Contato
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <a class="card-text" href="#">
+              +55 (11) 99919-8973
+            </a>
+            <a class="card-text" href="#">
+              +55 (11) 2830-5400
+            </a>
+            <p class="card-text" href="#">
+              | Copyright 2019 Pontaltech <br />| Todos os direitos reservados
             </p>
           </div>
         </div>

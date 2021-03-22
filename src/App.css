@@ -6,7 +6,9 @@
   font-family: "Gotham", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 .App {
   /* text-align: center;
   background-color: #ffffff;
@@ -152,6 +154,7 @@ a:focus {
 .info {
   text-align: center;
   padding: 20px 180px;
+  margin-bottom: 50px;
   background-image: linear-gradient(to bottom, white 30%, #8080801e);
 }
 
@@ -233,6 +236,160 @@ a:focus {
 }
 /*  END CSS ABOUT */
 
+/* START SESSION 6 */
+.container .benefits {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-benefits .title {
+  text-align: center;
+  font-size: 52px;
+  line-height: 52px;
+  color: #ed2e46;
+  margin-bottom: 1.4em;
+  font-family: "Gotham Black";
+}
+.card-benefits a {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 60px;
+  width: 30vw;
+  padding: 15px;
+  background-color: #432c46;
+  color: white;
+  font-weight: bold;
+  border-radius: 16px;
+}
+.container .row {
+  margin-bottom: 20px;
+}
+.container .benefit h4 {
+  font-size: 16px;
+  color: #ed2e46;
+}
+.container .benefit p {
+  opacity: 0.6;
+}
+/* END SESSION 6 */
+
+/* SESSION 7 */
+.bussiness-items {
+  margin-bottom: 80px;
+}
+.col-sm:nth-child(4) {
+  margin-bottom: 80px;
+}
+.bussiness-items h3 {
+  margin-bottom: 30px;
+  font-size: 46px;
+  color: #ed2e46;
+  margin-top: 30px;
+}
+.bussiness-items img {
+  width: 60px;
+}
+.bussiness-items h4 {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #ed2e46;
+}
+.bussiness-items p {
+  margin: 20px 15vw;
+}
+.bussiness-items a {
+  padding: 15px 60px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 16px;
+  background-color: #432c46;
+  color: white;
+  border: none;
+}
+/* END SESSION 7 */
+
+/* SESSION 8 */
+.carousel {
+  margin-bottom: 80px;
+}
+.carousel h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #432c46;
+  margin-bottom: -50px;
+  top: 0;
+  left: 0;
+}
+.carousel-inner {
+  background-color: whitesmoke;
+  color: black !important;
+  height: 75vh;
+  display: inline;
+}
+.carousel-item {
+  margin-bottom: 60px;
+}
+.carousel-item .texto {
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  margin: 100px 250px 200px;
+  opacity: 0.6;
+}
+.carousel-item h5 {
+  color: #ed2e46;
+}
+.carousel-item .person {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -40px;
+}
+.carousel-item .person img:nth-child(1) {
+  position: relative;
+  margin-left: -40px;
+  margin-right: 10px;
+  top: 0;
+  left: 0;
+}
+.carousel-item .person img:nth-child(2) {
+  position: absolute;
+  top: 26px;
+  right: 540px;
+  border-radius: 50%;
+}
+.carousel-item .carousel-caption p {
+  opacity: 0.5;
+}
+.arousel-control-next-icon,
+.arousel-control-prev-icon {
+  border-radius: 50%;
+}
+#carouselExampleCaptions {
+  color: black !important;
+}
+/* SESSION FOOTER */
+.card-deck,
+.card {
+  background-color: #432c46;
+  color: white;
+  border: none;
+  width: 100vw;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.card-body a {
+  display: flex;
+  color: white;
+}
+.card-body p {
+  margin-top: 20px;
+  font-size: 12px;
+}
 /* Responsive CSS */
 
 @media (max-width: 768px) {
