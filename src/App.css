@@ -101,18 +101,18 @@ a:focus {
 /* Banner */
 
 .banner {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 30px;
   /* margin-left: 20px; */
-  background-image: url("./assets/banner.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   margin-top: -100px;
 }
-
+.banner img {
+    width: 100vw;
+    position: absolute;
+}
 .banner .title {
   font-size: 6em;
   font-weight: lighter;
