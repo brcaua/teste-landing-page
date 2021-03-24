@@ -1,10 +1,14 @@
 * {
-  margin: 0;
+  /* margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
   font-family: "Gotham", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+}
+
+a {
+    text-decoration: none;
 }
 
 .App {
@@ -41,7 +45,7 @@ a:focus {
 /*********** Nav Bar CSS **********/
 /**********************************/
 .navbar {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   /* top: 60px; */
   padding: 2px 15px;
@@ -113,10 +117,11 @@ a:focus {
 
 .banner .title {
   font-size: 6em;
-  font-weight: lighter;
+  font-weight: 100!important;
   color: #ed2e46;
   margin-top: 180px;
   margin-bottom: 140px;
+  z-index: 999;
 }
 .banner .title span {
   font-weight: 550;
@@ -182,34 +187,40 @@ a:focus {
 /*  ABOUT CSS */
 
 .about {
-  padding: 0px 75px;
-  margin-bottom: 3em;
+  padding: 0;
+  /* margin-bottom: 3em; */
 }
 .about .grid-obs {
-  margin-top: -15px;
+  /* margin-top: -15px; */
 }
-.about .title {
-  margin-right: 20px;
+.row-about {
+  margin: 0;
 }
 .about .title p:nth-child(1) {
   font-size: 46px;
   text-transform: uppercase;
   font-weight: 900;
   color: #ed2e46;
-  margin-top: 60px;
+  /* margin-top: 20px; */
   line-height: 46px;
-  font-family: "Gotham Black";
+  letter-spacing: .1rem;
 }
 .about .description {
-  padding-top: 0px;
+  /* padding-top: 0px; */
   font-size: 1.1em;
-  color: #333;
-  font-family: "Gotham";
+  color: #808080;
+  /* font-family: "Gotham"; */
   opacity: 0.8;
 }
+
+.aboutc2 {
+    background-image: linear-gradient(to bottom, white 30%, #8080801e);
+    /* height: 215px; */
+}
+
 .about .section-header,
 .about .form-call {
-  margin-left: 30px;
+  margin-left: 0px;
 }
 .about .section-header p {
   text-transform: uppercase;
@@ -217,21 +228,319 @@ a:focus {
   font-weight: bold;
   line-height: 34px;
   color: #432c46;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .about .form-call input {
   padding: 8px 250px 8px 8px;
-  border: 1px solid gray;
+  border: 1px solid #808080;
   opacity: 0.8;
-  margin-top: 5px;
-  font-family: "Gotham";
+  /* margin-top: 5px; */
+  /* font-family: "Gotham"; */
 }
 .about .form-call a img {
   width: 50px;
   margin-left: 10px;
 }
 /*  END CSS ABOUT */
+
+/* SKILLS CSS SESSION 5*/
+
+.skills {
+    padding: 0 75px;
+    padding-top: 50px;
+}
+
+.skills .title {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #432c46;
+}
+
+.skills .row {
+    padding-top: 20px;
+}
+
+.skills button {
+    width: 24rem;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+    border: none;
+    text-align: center;
+  }
+  .skills .button {
+      margin-top: 20px;
+    text-align: center;
+  }
+  .skills button a {
+    color: white;
+  }
+
+.skill-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.skill-text {
+    margin-top: 15px;
+}
+
+.skill-text .title {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #ed2e46;
+}
+
+.skill-text .subtitle {
+    /* padding-top: 20px; */
+    font-size: 1em;
+    color: #808080;
+}
+
+
+/* START SESSION 6 */
+
+.card-benefits {
+    margin: 30px 0px;
+    padding: 30px 75px;
+    background-color: #eeeeeea9;
+}
+.card-benefits .benefits {
+    /* display: flex; */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .card-benefits .title {
+    text-align: center;
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 600;
+    color: #ed2e46;
+    margin-bottom: 1.4em;
+    /* font-family: "Gotham Black"; */
+  }
+  .card-benefits .row {
+    margin-bottom: 20px;
+  }
+  .card-benefits .benefit h4 {
+    font-size: 16px;
+    color: #ed2e46;
+    font-weight: 600;
+  }
+  .card-benefits .benefit p {
+    opacity: 0.6;
+  }
+
+  .card-benefits button {
+    width: 30rem;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+    border: none;
+    text-align: center;
+  }
+  .card-benefits .button {
+      margin-top: 20px;
+    text-align: center;
+  }
+  .card-benefits button a {
+    color: white;
+  }
+  /* END SESSION 6 */
+
+  /* SKILLS CSS SESSION 7*/
+
+.because {
+    padding: 0 75px;
+    padding-top: 50px;
+}
+
+.because .title {
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #432c46;
+}
+
+.because .row {
+    padding-top: 20px;
+}
+
+.because button {
+    width: 20rem;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+    border: none;
+    text-align: center;
+  }
+  .because .button {
+    margin: 40px 0px;
+    text-align: center;
+  }
+  .because button a {
+    color: white;
+  }
+
+.because-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.because-text {
+    margin-top: 15px;
+}
+
+.because-text .title {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #432c46;
+    font-weight: 800;
+}
+
+.because-text .subtitle {
+    /* padding-top: 20px; */
+    font-size: 1.5em;
+    color: #808080;
+}
+
+  /* SESSION 8 */
+.bussiness-items {
+    margin-bottom: 80px;
+  }
+  .col-sm:nth-child(4) {
+    margin-bottom: 80px;
+  }
+  .bussiness-items h3 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 4em;
+    color: #ed2e46;
+    margin-top: 30px;
+  }
+  .bussiness-items img {
+    width: 7rem;
+  }
+  .bussiness-items h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #ed2e46;
+  }
+  .bussiness-items p {
+    margin: 20px 15vw;
+    padding-top: 20px;
+    font-size: 1.2em;
+    color: #808080;
+  }
+  .bussiness-items a {
+    padding: 20px 60px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+    color: white;
+    border: none;
+  }
+  /* END SESSION 8 */
+
+  /* SESSION 8 */
+.carousel {
+    margin-bottom: 80px;
+  }
+  .carousel h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 3em;
+    color: #432c46;
+    font-weight: 700;
+    margin-bottom: -50px;
+    top: 0;
+    left: 0;
+  }
+  .carousel-inner {
+    background-color: whitesmoke;
+    color: black !important;
+    height: 75vh;
+    display: inline;
+  }
+  .carousel-item {
+    margin-bottom: 60px;
+  }
+  .carousel-item .texto {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    margin: 100px 250px 200px;
+    opacity: 0.6;
+  }
+  .carousel-item h5 {
+    color: #ed2e46;
+  }
+  .carousel-item .person {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -40px;
+  }
+  .carousel-item .person img:nth-child(1) {
+    position: relative;
+    margin-left: -40px;
+    margin-right: 10px;
+    top: 0;
+    left: 0;
+  }
+  .carousel-item .person img:nth-child(2) {
+    position: absolute;
+    top: 26px;
+    right: 540px;
+    border-radius: 50%;
+  }
+  .carousel-item .carousel-caption p {
+    opacity: 0.5;
+  }
+  .arousel-control-next-icon,
+  .arousel-control-prev-icon {
+    border-radius: 50%;
+  }
+  #carouselExampleCaptions {
+    color: black !important;
+  }
+
+  /* END SESSION 9 */
+
+
+  /* SESSION FOOTER */
+.card-deck,
+.card {
+  background-color: #432c46;
+  color: white;
+  border: none;
+  width: 100vw;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.card-body a {
+  display: flex;
+  color: white;
+}
+.card-body p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
 
 /* Responsive CSS */
 
@@ -250,15 +559,15 @@ a:focus {
   }
 
   .info .title {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   .info .subtitle {
-    font-size: 0.7em;
+    font-size: 1.0em;
   }
 
   .info .description {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 
   /* .navbar a.nav-link {
@@ -268,6 +577,19 @@ a:focus {
     .navbar .dropdown-menu {
         box-shadow: none;
     } */
+
+    .aboutc1 {
+        padding-left: 0px;
+    }
+
+    .aboutc2 {
+        padding-left: 0px;
+    }
+
+    .row-about {
+        padding: 20px;
+        /* margin-bottom: 3em; */
+    }
 }
 
 @media (min-width: 769px) {
@@ -285,6 +607,19 @@ a:focus {
 
   .info .description {
     font-size: 1em;
+  }
+
+  .row-about {
+    padding-left: 30px;
+    /* margin-bottom: 3em; */
+  }
+
+  .aboutc2 {
+    padding: 50px 30px 10px 5px;
+  }
+
+  .aboutc1 {
+    padding: 50px 5px 10px 0px;
   }
 }
 
@@ -331,6 +666,22 @@ a:focus {
   .info .description {
     font-size: 1.5em;
   }
+
+  .row-about {
+    padding-left: 75px;
+    /* margin-bottom: 3em; */
+  }
+
+  .aboutc2 {
+    padding: 50px 75px 10px 5px;
+  }
 }
+
+@media (min-width: 1950px) {
+    .App {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+  }
 
 /* END */
