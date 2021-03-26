@@ -17,6 +17,7 @@ import because1 from "./assets/because1.png";
 import because2 from "./assets/because2.png";
 import because3 from "./assets/because3.png";
 import because4 from "./assets/because4.png";
+import CallFormv1 from "./components/CallFormv1";
 
 function App() {
   return (
@@ -75,10 +76,10 @@ function App() {
       {/* 2ª Sessão */}
       <div className="banner">
         <div class="banner-card">
-          <h1 class="title">
+          <div class="title">
             {/* <span>pontal</span>play! */}
             <img src={logo_play} />
-          </h1>
+          </div>
           <div class="banner-contact">
             <p>
               O AGENTE VIRTUAL <br></br> DA SUA MARCA
@@ -110,11 +111,12 @@ function App() {
               <p>Receba uma ligação do nosso agente virtual inteligente!</p>
             </div>
             <div class="form-call">
-              <input type="tel" placeholder="Como você se chama?" required />
+              {/* <input type="tel" placeholder="Como você se chama?" required />
               <a href="#">
                 {" "}
                 <img src={phone} alt="" />
-              </a>
+              </a> */}
+              <CallFormv1 />
             </div>
           </div>
         </div>
@@ -338,7 +340,6 @@ function App() {
         <div class="col bussiness-items" align="center">
           <h3>PARA A SUA EMPRESA</h3>
           <div class="col-sm">
-            <img src="" alt="" />
             <img src={money} alt="Cobrança" />
             <h4>COBRANÇA</h4>
             <p>
@@ -405,27 +406,22 @@ function App() {
               iusto molestiae reiciendis. Ducimus adipisci in odio alias?
               Accusamus architecto harum asperiores omnis.
             </p>
-            <div class="carousel-caption work d-none d-md-block">
+            <div class="carousel-caption work">
               <div class="person">
                 <img src={avatar} alt="" width="70px" />
-                <img
-                  src="https://media-exp1.licdn.com/dms/image/C4E03AQE_BzFWQFa3WQ/profile-displayphoto-shrink_200_200/0/1592513934648?e=1619049600&v=beta&t=nyU5jZQMoaDCGEJ6-VcaZU4jrtyGQkPZoANDtaDDTF0"
-                  alt=""
-                  width="60px"
-                />
                 <h5>Marcos Guerra</h5>
               </div>
               <p>Programador</p>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          {/* <div class="carousel-item" data-bs-interval="2000">
             <p class="texto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
               facilis praesentium ad quasi nulla voluptate quibusdam beatae
               iusto molestiae reiciendis. Ducimus adipisci in odio alias?
               Accusamus architecto harum asperiores omnis.
             </p>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
               <h5>Marcos Guerra</h5>
               <p>Programador</p>
             </div>
@@ -437,11 +433,11 @@ function App() {
               iusto molestiae reiciendis. Ducimus adipisci in odio alias?
               Accusamus architecto harum asperiores omnis.
             </p>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
               <h5>Marcos Guerra</h5>
               <p>Programador</p>
             </div>
-          </div>
+          </div> */}
         </div>
         <button
           class="carousel-control-prev"
@@ -464,60 +460,141 @@ function App() {
       </div>
 
       {/* Footer */}
-      <div class="card-deck">
-        <div class="card">
-          <div class="card-body" align="center">
-            <img src={logo_tech} alt="" width="200px" />
-          </div>
+      {/* <div class="card-deck">
+        <div class="row">
+            <div class="card col-lg-3 col-md-6">
+            <div class="card-body" align="center">
+                <img src={logo_tech} alt="" width="200px" />
+            </div>
+            </div>
+            <div class="card col-lg-3 col-md-6">
+            <div class="card-body">
+                <h5 class="card-title">PRODUTOS</h5>
+                <a class="card-text" href="#">
+                Cultura
+                </a>
+                <a class="card-text" href="#">
+                Carreiras
+                </a>
+                <a class="card-text" href="#">
+                Endereço
+                </a>
+                <a class="card-text" href="#">
+                Contato
+                </a>
+            </div>
+            </div>
+            <div class="card col-lg-3 col-md-6">
+            <div class="card-body">
+                <h5 class="card-title">SOBRE NÓS</h5>
+                <a class="card-text" href="#">
+                Cultura
+                </a>
+                <a class="card-text" href="#">
+                Carreiras
+                </a>
+                <a class="card-text" href="#">
+                Endereço
+                </a>
+                <a class="card-text" href="#">
+                Contato
+                </a>
+            </div>
+            </div>
+            <div class="card col-lg-3 col-md-6">
+            <div class="card-body">
+                <a class="card-text" href="#">
+                +55 (11) 99919-8973
+                </a>
+                <a class="card-text" href="#">
+                +55 (11) 2830-5400
+                </a>
+                <p class="card-text" href="#">
+                | Copyright 2019 Pontaltech <br />| Todos os direitos reservados
+                </p>
+            </div>
+            </div>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">PRODUTOS</h5>
-            <a class="card-text" href="#">
-              Cultura
-            </a>
-            <a class="card-text" href="#">
-              Carreiras
-            </a>
-            <a class="card-text" href="#">
-              Endereço
-            </a>
-            <a class="card-text" href="#">
-              Contato
-            </a>
-          </div>
+      </div> */}
+
+        <div class="footer">
+            <div class="row">
+                <div class="col-lg-3 col-md-6" align="left">
+                    <div class="card-body">
+                        <img src={logo_tech} alt="" width="200px" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">PRODUTOS</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                pontalsms
+                            </li>
+                            <li class="nav-item">
+                                pontalbot
+                            </li>
+                            <li class="nav-item">
+                                pontalomni
+                            </li>
+                            <li class="nav-item">
+                                pontalemail
+                            </li>
+                            <li class="nav-item">
+                                pontalmaestro
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://www.pontaltech.com.br/pontal-gestor/">pontalgestor</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-body">
+                            <h5 class="card-title">SOBRE NÓS</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="https://www.pontaltech.com.br/cultura/">Cultura</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="https://jobs.kenoby.com/pontaltech">Carreira</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="https://www.pontaltech.com.br/contato/">Endereço</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" target="_blank" href="https://www.pontaltech.com.br/contato/">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card-body">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                +55 (11) 99919-8973
+                                </li>
+                                <li class="nav-item">
+                                +55 (11) 2830-5400
+                                </li>
+                            </ul>
+                            
+                            <ul class="copyright">
+                                <li class="nav-item">
+                                    <p class="card-text" href="#">
+                                        | Copyright 2019 Pontaltech
+                                    </p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="card-text" href="#">
+                                        | Todos os direitos reservados
+                                    </p>
+                                </li>
+                            </ul>  
+                        </div>
+                    </div>
+            </div>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">SOBRE NÓS</h5>
-            <a class="card-text" href="#">
-              Cultura
-            </a>
-            <a class="card-text" href="#">
-              Carreiras
-            </a>
-            <a class="card-text" href="#">
-              Endereço
-            </a>
-            <a class="card-text" href="#">
-              Contato
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <a class="card-text" href="#">
-              +55 (11) 99919-8973
-            </a>
-            <a class="card-text" href="#">
-              +55 (11) 2830-5400
-            </a>
-            <p class="card-text" href="#">
-              | Copyright 2019 Pontaltech <br />| Todos os direitos reservados
-            </p>
-          </div>
-        </div>
-      </div>
 
     </div>
   );

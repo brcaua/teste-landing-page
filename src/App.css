@@ -116,9 +116,10 @@ a:focus {
 }
 
 .banner .title {
-  font-size: 6em;
-  font-weight: 100!important;
-  color: #ed2e46;
+  /* font-size: 6em; */
+  /* font-weight: 100!important; */
+  /* color: #ed2e46; */
+  align-items:flex-start;
   margin-top: 180px;
   margin-bottom: 140px;
   z-index: 999;
@@ -231,17 +232,57 @@ a:focus {
   /* margin-top: 20px; */
 }
 
-.about .form-call input {
-  padding: 8px 250px 8px 8px;
+/* .about .form-call input {
+  padding: 8px;
+  width: 80%;
   border: 1px solid #808080;
   opacity: 0.8;
-  /* margin-top: 5px; */
-  /* font-family: "Gotham"; */
 }
 .about .form-call a img {
   width: 50px;
   margin-left: 10px;
-}
+} */
+
+.form-call {
+    display: block;
+  }
+  .form-call form {
+    display: flex;
+    flex-direction: row;
+  }
+  .form-call form input {
+    width: 50rem;
+    height: 3.4em;
+    font-size: 13px;
+  }
+  .form-call form button {
+    padding: 5px 20px;
+    height: 3em;
+    border: none;
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 14px;
+    background-color: #ed2e46;
+    color: #fff;
+  }
+  .form-call .call {
+    background-color: #fff;
+    margin-top: -60px;
+    margin-left: 10px;
+    padding: 0px;
+    height: 0px;
+  }
+
+
+
+
+
+
+
+
+
+
+
 /*  END CSS ABOUT */
 
 /* SKILLS CSS SESSION 5*/
@@ -338,7 +379,8 @@ a:focus {
   }
 
   .card-benefits button {
-    width: 30rem;
+    width: 100%;
+    max-width: 30rem;
     padding: 15px;
     font-size: 20px;
     font-weight: 600;
@@ -476,12 +518,13 @@ a:focus {
   }
   .carousel-item {
     margin-bottom: 60px;
+    /* margin-right: 0px; */
   }
   .carousel-item .texto {
     font-size: 22px;
     color: black;
     text-align: center;
-    margin: 100px 250px 200px;
+    margin: 100px 20% 150px 20%;
     opacity: 0.6;
   }
   .carousel-item h5 {
@@ -505,6 +548,7 @@ a:focus {
     right: 540px;
     border-radius: 50%;
   }
+
   .carousel-item .carousel-caption p {
     opacity: 0.5;
   }
@@ -520,7 +564,7 @@ a:focus {
 
 
   /* SESSION FOOTER */
-.card-deck,
+/* .card-deck,
 .card {
   background-color: #432c46;
   color: white;
@@ -539,6 +583,41 @@ a:focus {
 .card-body p {
   margin-top: 20px;
   font-size: 12px;
+} */
+
+.footer {
+    background-color: #432c46;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    /* padding-bottom: 40px; */
+}
+
+.footer h5 {
+    color: white;
+    /* padding-bottom: 40px; */
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .copyright {
+    margin-top: 30px;
+}
+
+.footer ul li a {
+    padding: 0;
+    font-weight: 100;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-item {
+    color: white;
 }
 
 
@@ -552,6 +631,29 @@ a:focus {
 
   .banner {
     padding: 0px 15px;
+  }
+
+  .banner .title img {
+    width: 20em;
+  }
+
+  .banner .title {
+    margin-bottom: 100px;
+  }
+
+  .banner button {
+      width: 12rem;
+      font-size: 12px;
+      padding: 15px;
+  }
+
+  .banner p {
+    font-size: 1.7em;
+    line-height: 30px;
+    /* color: #432c46;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 40px; */
   }
 
   .info {
@@ -568,6 +670,18 @@ a:focus {
 
   .info .description {
     font-size: 0.7em;
+  }
+
+  .about .title p:nth-child(1) {
+    font-size: 1.8em;
+  }
+
+  .about .description {
+    font-size: 0.9em;
+  }
+
+  .aboutc2 p:nth-child(1) {
+    font-size: 1.5em;
   }
 
   /* .navbar a.nav-link {
@@ -589,6 +703,115 @@ a:focus {
     .row-about {
         padding: 20px;
         /* margin-bottom: 3em; */
+    }
+
+    .skills .title {
+        font-size: 1.5em;
+    }
+
+    .skill-img img{
+        max-width:70px;
+        max-height:70px;
+    }
+
+    .skill-text .title {
+        font-size: 1em;
+    }
+
+    .skill-text .subtitle {
+        font-size: 0.8em;
+    }
+
+    .skills button {
+        width: 15rem;
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .card-benefits .title {
+        font-size: 1.6em;
+        line-height: 28px;
+    }
+
+    .card-benefits button {
+        max-width: 15rem;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .because .title {
+        font-size: 2.2em;
+    }
+
+    .because .because-item img {
+        max-width:90px;
+        max-height:90px;
+    }
+
+    .because-text .title {
+        font-size: 1.3em;
+    }
+
+    .because-text .subtitle {
+        font-size: 0.8em;
+    }
+
+    .because button {
+        width: 13rem;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .bussiness-items h3 {
+        font-size: 2.5em;
+      }
+
+    .bussiness-items img {
+        width: 6rem;
+    }
+
+    .bussiness-items p {
+        font-size: 1em;
+    }
+
+    .bussiness-items a {
+        padding: 15px 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .carousel-item .texto {
+        font-size: 0.7em;
+    }
+
+    .carousel-caption p{
+        margin-bottom: 0;
+        font-size: 0.8em;
+        margin-top: 5px;
+      }
+
+      .person img{
+          width: 50px;
+      }
+
+      .person h5 {
+        font-size: 0.9em;
+    }
+
+    .carousel-item .texto {
+        margin-bottom: 100px;
+    }
+
+    .carousel h1 {
+        font-size: 2em;
+    }
+
+    .about .form-call input {
+        padding: 3px;
+    }
+
+    .about .form-call a img {
+        width: 2rem;
     }
 }
 
@@ -679,8 +902,8 @@ a:focus {
 
 @media (min-width: 1950px) {
     .App {
-        padding-left: 15%;
-        padding-right: 15%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
   }
 
