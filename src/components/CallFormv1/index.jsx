@@ -130,9 +130,9 @@ export default function CallFormv1() {
             console.log("RESPONSE", response);
 
             setLoading(false);
-            setResponse(
-              "Solicitação enviada com sucesso. Você receberá uma chamada em instantes!"
-            );
+            alert(
+                "Solicitação enviada com sucesso. Você receberá uma chamada em instantes!"
+            )
           } catch (err) {
             setLoading(false);
             setResponse(
@@ -143,9 +143,9 @@ export default function CallFormv1() {
           }
         })
         .catch((err) => {
-          setResponse(
-            "Desculpe, não conseguimos completar sua solicitação, tente mais tarde!"
-          );
+            alert(
+                "Desculpe, não conseguimos completar sua solicitação, tente mais tarde!"
+            )
         });
     }
   };
