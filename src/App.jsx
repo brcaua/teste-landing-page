@@ -1,10 +1,7 @@
-// import CallForm from "./components/CallForm";
+import { useState, useEffect } from "react";
 import "./App.css";
-// import CallForm from "./components/CallForm";
-// import ExampleComponent from "./components/ExampleComponent";
 import logo_tech from "./assets/pontaltech.svg";
 import logo_play from "./assets/logo_play.png";
-import phone from "./assets/phone.svg";
 import shape_45 from "./assets/Shape_45.png";
 import shape_43 from "./assets/Shape_43.png";
 import shape_42 from "./assets/Shape_42.png";
@@ -17,8 +14,9 @@ import because1 from "./assets/because1.png";
 import because2 from "./assets/because2.png";
 import because3 from "./assets/because3.png";
 import because4 from "./assets/because4.png";
+import { CallForm } from "./components/CallForm";
 
-function App() {
+export function App() {
   return (
     <div className="App">
       {/* <CallForm /> */}
@@ -61,13 +59,6 @@ function App() {
               <a href="#" class="nav-item nav-link">
                 Contato
               </a>
-              {/* <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu">
-                                    <a href="blog.html" class="dropdown-item">Blog Page</a>
-                                    <a href="single.html" class="dropdown-item">Single Page</a>
-                                </div>
-                            </div> */}
             </div>
           </div>
         </div>
@@ -95,9 +86,7 @@ function App() {
         <div class="row row-about">
           <div class="col-lg-6 col-md-6 aboutc1">
             <div class="title">
-              <p>
-                Vivencie essa experiência
-              </p>
+              <p>Vivencie essa experiência</p>
               <p class="description">
                 Informe os seus dados para vivenciar uma demonstração de como
                 podemos garantir a satisfação de seus clientes e trazer
@@ -110,11 +99,7 @@ function App() {
               <p>Receba uma ligação do nosso agente virtual inteligente!</p>
             </div>
             <div class="form-call">
-              <input type="tel" placeholder="Como você se chama?" required />
-              <a href="#">
-                {" "}
-                <img src={phone} alt="" />
-              </a>
+              <CallForm />
             </div>
           </div>
         </div>
@@ -125,212 +110,243 @@ function App() {
           <div class="align-items-center">
             <p class="title">Toda ligação importa</p>
             <p class="subtitle">
-              Nosso time de <span>agentes virtuais reserva</span> garante que todas as suas ligações sejam conectadas.
+              Nosso time de <span>agentes virtuais reserva</span> garante que
+              todas as suas ligações sejam conectadas.
             </p>
             <p class="description">
-              Além de otimizar sua operação, mantendo todos os agentes sempre ocupados, o Pontalplay! ainda disponibiliza um time de{" "}
-              <strong>agentes virtuais reserva</strong>, que entram em
-              jogo automaticamente toda vez que o número de ligações atendidas for maior do que os agentes virtuais contratados.
+              Além de otimizar sua operação, mantendo todos os agentes sempre
+              ocupados, o Pontalplay! ainda disponibiliza um time de{" "}
+              <strong>agentes virtuais reserva</strong>, que entram em jogo
+              automaticamente toda vez que o número de ligações atendidas for
+              maior do que os agentes virtuais contratados.
             </p>
           </div>
         </div>
       </div>
-        {/* 5° Sessão */}
+      {/* 5° Sessão */}
       <div class="skills">
-            <div class="section-header text-center">
-                <h2 class="title">Customize seu agente virtual inteligente</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="skill-item">
-                        <div class="skill-img">
-                            <img src={shape_45} alt="Team Image"/>
-                        </div>
-                        <div class="skill-text">
-                            <h2 class="title">Chamadas <br></br>Ativas</h2>
-                            <p class="subtitle">Auto fluxo de ligações totalmente customizados.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="skill-item">
-                        <div class="skill-img">
-                            <img src={shape_43} alt="Team Image"/>
-                        </div>
-                        <div class="skill-text">
-                            <h2 class="title">Inteligência artificial de alta performance</h2>
-                            <p class="subtitle">Reconhecimento de voz capaz de compreender e oferecer a melhor solução.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="skill-item">
-                        <div class="skill-img">
-                            <img src={shape_42} alt="Team Image"/>
-                        </div>
-                        <div class="skill-text">
-                            <h2 class="title">Transbordo para o atendimento humano</h2>
-                            <p class="subtitle">Direcionamento automatizado para os canais de atendimento tradicional.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="skill-item">
-                        <div class="skill-img">
-                        <img src={shape_44} alt="Team Image"/>
-                        </div>
-                        <div class="skill-text">
-                            <h2 class="title">Integração com seus sistemas</h2>
-                            <p class="subtitle">Integra com qualquer sistema e está apto a trabalhar com os padrões de todas as instituições bancárias.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="button">
-                <button class="btn-about">
-                    <a href="#">QUERO UM AGENTE VIRTUAL</a>
-                </button>
-            </div>
+        <div class="section-header text-center">
+          <h2 class="title">Customize seu agente virtual inteligente</h2>
         </div>
-    {/* SESSION 6 - Beneficios */}
-    <div class="card-benefits">
-        <div class="container">
-
-            <p class="title">
-            BENEFÍCIOS DO AGENTE VIRTUAL INTELIGENTE PARA A SUA EMPRESA
-            </p>
-            <div class="row benefits">
-            <div class="col-lg-3 col-md-6 benefit">
-                <h4>AGILIDADE:</h4>
-                <p>alto poder de discagem</p>
-            </div>
-            <div class="col-lg-3 col-md-6 benefit">
-                <h4>LOCALIZADOR:</h4>
-                <p>encontra a pessoa certa</p>
-            </div>
-            <div class="col-lg-3 col-md-6 benefit">
-                <h4>RESPEITO AO CLIENTE:</h4>
-                <p>100% das ligações atendidas são conectadas</p>
-            </div>
-            <div class="col-lg-3 col-md-6 benefit">
-                <h4>PRODUTIVIDADE:</h4>
-                <p>otimiza o tempo de seus atendentes humanos</p>
-            </div>
-            </div>
-            <div class="row benefits">
-            <div class="col-lg-3 col-md-6 benefit">
-                <h4>DASHBOARD:</h4>
-                <p>
-                estrutura simples e interativa feita para transformar métricas em
-                estrátegia
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-item">
+              <div class="skill-img">
+                <img src={shape_45} alt="Team Image" />
+              </div>
+              <div class="skill-text">
+                <h2 class="title">
+                  Chamadas <br></br>Ativas
+                </h2>
+                <p class="subtitle">
+                  Auto fluxo de ligações totalmente customizados.
                 </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-item">
+              <div class="skill-img">
+                <img src={shape_43} alt="Team Image" />
+              </div>
+              <div class="skill-text">
+                <h2 class="title">
+                  Inteligência artificial de alta performance
+                </h2>
+                <p class="subtitle">
+                  Reconhecimento de voz capaz de compreender e oferecer a melhor
+                  solução.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-item">
+              <div class="skill-img">
+                <img src={shape_42} alt="Team Image" />
+              </div>
+              <div class="skill-text">
+                <h2 class="title">Transbordo para o atendimento humano</h2>
+                <p class="subtitle">
+                  Direcionamento automatizado para os canais de atendimento
+                  tradicional.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-item">
+              <div class="skill-img">
+                <img src={shape_44} alt="Team Image" />
+              </div>
+              <div class="skill-text">
+                <h2 class="title">Integração com seus sistemas</h2>
+                <p class="subtitle">
+                  Integra com qualquer sistema e está apto a trabalhar com os
+                  padrões de todas as instituições bancárias.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="btn-about">
+            <a href="#">QUERO UM AGENTE VIRTUAL</a>
+          </button>
+        </div>
+      </div>
+      {/* SESSION 6 - Beneficios */}
+      <div class="card-benefits">
+        <div class="container">
+          <p class="title">
+            BENEFÍCIOS DO AGENTE VIRTUAL INTELIGENTE PARA A SUA EMPRESA
+          </p>
+          <div class="row benefits">
+            <div class="col-lg-3 col-md-6 benefit">
+              <h4>AGILIDADE:</h4>
+              <p>alto poder de discagem</p>
             </div>
             <div class="col-lg-3 col-md-6 benefit">
-                <h4>MONITORIA:</h4>
-                <p>
+              <h4>LOCALIZADOR:</h4>
+              <p>encontra a pessoa certa</p>
+            </div>
+            <div class="col-lg-3 col-md-6 benefit">
+              <h4>RESPEITO AO CLIENTE:</h4>
+              <p>100% das ligações atendidas são conectadas</p>
+            </div>
+            <div class="col-lg-3 col-md-6 benefit">
+              <h4>PRODUTIVIDADE:</h4>
+              <p>otimiza o tempo de seus atendentes humanos</p>
+            </div>
+          </div>
+          <div class="row benefits">
+            <div class="col-lg-3 col-md-6 benefit">
+              <h4>DASHBOARD:</h4>
+              <p>
+                estrutura simples e interativa feita para transformar métricas
+                em estrátegia
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 benefit">
+              <h4>MONITORIA:</h4>
+              <p>
                 acompanhamento das chamadas em módulos podendo escolher o trecho
                 da chamada
-                </p>
+              </p>
             </div>
             <div class="col-lg-3 col-md-6 benefit">
-                <h4>FLUIDEZ À ROTINA:</h4>
-                <p>integração multicanal com seu sistema</p>
+              <h4>FLUIDEZ À ROTINA:</h4>
+              <p>integração multicanal com seu sistema</p>
             </div>
             <div class="col-lg-3 col-md-6 benefit">
-                <h4>PLATAFORMA INTUITIVA:</h4>
-                <p>simples e prática, a navegação é dinâmica e descomplicada</p>
+              <h4>PLATAFORMA INTUITIVA:</h4>
+              <p>simples e prática, a navegação é dinâmica e descomplicada</p>
             </div>
-            </div>
-            <div class="row benefits">
+          </div>
+          <div class="row benefits">
             <div class="col-lg-3 col-md-6 benefit">
-                <h4>CURADORIA:</h4>
-                <p>
+              <h4>CURADORIA:</h4>
+              <p>
                 fluxos de conversas únicas e estudo constante para localizar
                 pontos de melhorias
-                </p>
+              </p>
             </div>
             <div class="col-lg-3 col-md-6 benefit">
-                <h4>ALERTAS:</h4>
-                <p>
+              <h4>ALERTAS:</h4>
+              <p>
                 receba notificações, por e-mail ou SMS, dos seus principais
                 indicadores
-                </p>
+              </p>
             </div>
             <div class="col-lg-3 col-md-6 benefit">
-                <h4>SATISFAÇÃO GARANTIDA:</h4>
-                <p>efetividade em todos os antendimentos</p>
+              <h4>SATISFAÇÃO GARANTIDA:</h4>
+              <p>efetividade em todos os antendimentos</p>
             </div>
             <div class="col-lg-3 col-md-6 benefit">
-                <h4>100% NA NUVEM:</h4>
-                <p>escalabilidade, menor investimento e maior segurança</p>
+              <h4>100% NA NUVEM:</h4>
+              <p>escalabilidade, menor investimento e maior segurança</p>
             </div>
-            </div>
+          </div>
 
-            <div class="button">
-                <button class="btn-about">
-                    <a href="#">REVOLUCIONE SEU ATENDIMENTO</a>
-                </button>
-            </div>
+          <div class="button">
+            <button class="btn-about">
+              <a href="#">REVOLUCIONE SEU ATENDIMENTO</a>
+            </button>
+          </div>
         </div>
       </div>
 
-       {/* 7° Sessão */}
-       <div class="because">
-            <div class="section-header text-center">
-                <h2 class="title">Porque o pontalplay!</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="because-item">
-                        <div class="because-img">
-                            <img src={because2} alt="Team Image"/>
-                        </div>
-                        <div class="because-text">
-                            <h2 class="title">Não desligamos chamadas</h2>
-                            <p class="subtitle">Fim das ligações desligadas utilizadas para manter a taxa de ocupação alta</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="because-item">
-                        <div class="because-img">
-                            <img src={because3} alt="Team Image"/>
-                        </div>
-                        <div class="because-text">
-                            <h2 class="title">Melhores modelos de inteligência artificial</h2>
-                            <p class="subtitle">Personalização de jornadas cognitivas por meio do design conversacional</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="because-item">
-                        <div class="because-img">
-                            <img src={because1} alt="Team Image"/>
-                        </div>
-                        <div class="because-text">
-                            <h2 class="title">Muito mais autonomia para você</h2>
-                            <p class="subtitle">Configure os horários e intervalos das chamadas para manter a satisfação do cliente</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="because-item">
-                        <div class="because-img">
-                        <img src={because4} alt="Team Image"/>
-                        </div>
-                        <div class="because-text">
-                            <h2 class="title">Conformidade com a Lgpd</h2>
-                            <p class="subtitle">Operação de acordo com as normas da Lei Geral de Proteção de dados - LGPD</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="button">
-                <button class="btn-about">
-                    <a href="#">SAIBA MAIS</a>
-                </button>
-            </div>
+      {/* 7° Sessão */}
+      <div class="because">
+        <div class="section-header text-center">
+          <h2 class="title">Porque o pontalplay!</h2>
         </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="because-item">
+              <div class="because-img">
+                <img src={because2} alt="Team Image" />
+              </div>
+              <div class="because-text">
+                <h2 class="title">Não desligamos chamadas</h2>
+                <p class="subtitle">
+                  Fim das ligações desligadas utilizadas para manter a taxa de
+                  ocupação alta
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="because-item">
+              <div class="because-img">
+                <img src={because3} alt="Team Image" />
+              </div>
+              <div class="because-text">
+                <h2 class="title">
+                  Melhores modelos de inteligência artificial
+                </h2>
+                <p class="subtitle">
+                  Personalização de jornadas cognitivas por meio do design
+                  conversacional
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="because-item">
+              <div class="because-img">
+                <img src={because1} alt="Team Image" />
+              </div>
+              <div class="because-text">
+                <h2 class="title">Muito mais autonomia para você</h2>
+                <p class="subtitle">
+                  Configure os horários e intervalos das chamadas para manter a
+                  satisfação do cliente
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="because-item">
+              <div class="because-img">
+                <img src={because4} alt="Team Image" />
+              </div>
+              <div class="because-text">
+                <h2 class="title">Conformidade com a Lgpd</h2>
+                <p class="subtitle">
+                  Operação de acordo com as normas da Lei Geral de Proteção de
+                  dados - LGPD
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="btn-about">
+            <a href="#">SAIBA MAIS</a>
+          </button>
+        </div>
+      </div>
 
       {/* Session 8 -  Para a sua empresa*/}
 
@@ -343,8 +359,8 @@ function App() {
             <h4>COBRANÇA</h4>
             <p>
               Obtenha os melhores resultados e melhore a performance de suas
-              campanhas utilizando<br></br> a Inteligência Artificial em conjunto com o
-              alto poder de discagem
+              campanhas utilizando<br></br> a Inteligência Artificial em
+              conjunto com o alto poder de discagem
             </p>
           </div>
           <div class="col-sm">
@@ -352,16 +368,16 @@ function App() {
             <h4>VAREJO</h4>
             <p>
               Faça prospecção ativa e mantenha um bom relacionamento ao tirar
-              dúvidas,<br></br> enviar pesquisas e informar promoções, tudo de forma
-              automatizada.
+              dúvidas,<br></br> enviar pesquisas e informar promoções, tudo de
+              forma automatizada.
             </p>
           </div>
           <div class="col-sm">
             <img src={health} alt="Saúde" />
             <h4>SAÚDE</h4>
             <p>
-              Otimize o tempo ao atualizar cadastros, informar resultados<br></br> de
-              exames e agendar consultas com seu agente virtual
+              Otimize o tempo ao atualizar cadastros, informar resultados
+              <br></br> de exames e agendar consultas com seu agente virtual
             </p>
           </div>
           <a href="#">QUERO SABER MAIS!</a>
@@ -518,7 +534,6 @@ function App() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }
