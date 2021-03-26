@@ -52,9 +52,9 @@ export const InputStyle = {
   border: "none",
   borderRadius: "16px",
   hover: {
-    boxShadow: "1em #e0004d"
-  }
-}
+    boxShadow: "1em #e0004d",
+  },
+};
 
 export const Label = styled.label`
   display: flex;

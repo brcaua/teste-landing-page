@@ -160,7 +160,7 @@ export default function CallFormv1() {
       <div class="container">
         <div class="stepwizard">
           <div class="stepwizard-row setup-panel">
-            <div class="stepwizard-step col-xs-3">
+            <div class="stepwizard-step col-xs-1">
               <a
                 href="#step-1"
                 type="button"
@@ -169,10 +169,10 @@ export default function CallFormv1() {
                 1
               </a>
               <p>
-                <small>Primeiro nome</small>
+                <small>Nome</small>
               </p>
             </div>
-            <div class="stepwizard-step col-xs-3">
+            <div class="stepwizard-step col-xs-2">
               <a
                 href="#step-2"
                 type="button"
@@ -185,7 +185,7 @@ export default function CallFormv1() {
                 <small>Email</small>
               </p>
             </div>
-            <div class="stepwizard-step col-xs-4">
+            <div class="stepwizard-step col-xs-3">
               <a
                 href="#step-3"
                 type="button"
@@ -256,7 +256,7 @@ export default function CallFormv1() {
                 id="phone"
                 required
                 placeholder="(99)999999999"
-                className="form-control" // alwaysShowMask
+                className="form-control tel" // alwaysShowMask
                 type="tel"
                 onChange={(e) => setPhone(e.target.value)}
                 maskChar=""

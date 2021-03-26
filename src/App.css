@@ -8,7 +8,7 @@
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .App {
@@ -119,7 +119,7 @@ a:focus {
   /* font-size: 6em; */
   /* font-weight: 100!important; */
   /* color: #ed2e46; */
-  align-items:flex-start;
+  align-items: flex-start;
   margin-top: 180px;
   margin-bottom: 140px;
   z-index: 999;
@@ -204,7 +204,7 @@ a:focus {
   color: #ed2e46;
   /* margin-top: 20px; */
   line-height: 46px;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 .about .description {
   /* padding-top: 0px; */
@@ -215,8 +215,8 @@ a:focus {
 }
 
 .aboutc2 {
-    background-image: linear-gradient(to bottom, white 30%, #8080801e);
-    /* height: 215px; */
+  background-image: linear-gradient(to bottom, white 30%, #8080801e);
+  /* height: 215px; */
 }
 
 .about .section-header,
@@ -244,326 +244,315 @@ a:focus {
 } */
 
 .form-call {
-    display: block;
-  }
-  .form-call form {
-    display: flex;
-    flex-direction: row;
-  }
-  .form-call form input {
-    width: 50rem;
-    height: 3.4em;
-    font-size: 13px;
-  }
-  .form-call form button {
-    padding: 5px 20px;
-    height: 3em;
-    border: none;
-    margin-left: 10px;
-    margin-top: -10px;
-    font-size: 14px;
-    background-color: #ed2e46;
-    color: #fff;
-  }
-  .form-call .call {
-    background-color: #fff;
-    margin-top: -60px;
-    margin-left: 10px;
-    padding: 0px;
-    height: 0px;
-  }
-
-
-
-
-
-
-
-
-
-
+  display: block;
+  flex-wrap: wrap;
+}
+.form-call form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-call form input {
+  width: 35vw;
+  height: 3.4rem;
+  font-size: 13px;
+}
+.form-call form button {
+  padding: 5px 20px;
+  height: 3rem;
+  border: none;
+  margin-left: 10px;
+  margin-top: -10px;
+  font-size: 14px;
+  background-color: #ed2e46;
+  color: #fff;
+}
+.form-call .call {
+  background-color: #fff;
+  margin-top: -60px;
+  margin-left: 10px;
+  padding: 0px;
+  height: 0px;
+}
 
 /*  END CSS ABOUT */
 
 /* SKILLS CSS SESSION 5*/
 
 .skills {
-    padding: 0 75px;
-    padding-top: 50px;
+  padding: 0 75px;
+  padding-top: 50px;
 }
 
 .skills .title {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #432c46;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #432c46;
 }
 
 .skills .row {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .skills button {
-    width: 24rem;
-    padding: 15px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 16px;
-    background-color: #432c46;
-    border: none;
-    text-align: center;
-  }
-  .skills .button {
-      margin-top: 20px;
-    text-align: center;
-  }
-  .skills button a {
-    color: white;
-  }
+  width: 24rem;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 16px;
+  background-color: #432c46;
+  border: none;
+  text-align: center;
+}
+.skills .button {
+  margin-top: 20px;
+  text-align: center;
+}
+.skills button a {
+  color: white;
+}
 
 .skill-item {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 .skill-text {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .skill-text .title {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    color: #ed2e46;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #ed2e46;
 }
 
 .skill-text .subtitle {
-    /* padding-top: 20px; */
-    font-size: 1em;
-    color: #808080;
+  /* padding-top: 20px; */
+  font-size: 1em;
+  color: #808080;
 }
-
 
 /* START SESSION 6 */
 
 .card-benefits {
-    margin: 30px 0px;
-    padding: 30px 75px;
-    background-color: #eeeeeea9;
+  margin: 30px 0px;
+  padding: 30px 75px;
+  background-color: #eeeeeea9;
 }
 .card-benefits .benefits {
-    /* display: flex; */
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .card-benefits .title {
-    text-align: center;
-    font-size: 52px;
-    line-height: 52px;
-    font-weight: 600;
-    color: #ed2e46;
-    margin-bottom: 1.4em;
-    /* font-family: "Gotham Black"; */
-  }
-  .card-benefits .row {
-    margin-bottom: 20px;
-  }
-  .card-benefits .benefit h4 {
-    font-size: 16px;
-    color: #ed2e46;
-    font-weight: 600;
-  }
-  .card-benefits .benefit p {
-    opacity: 0.6;
-  }
+  /* display: flex; */
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-benefits .title {
+  text-align: center;
+  font-size: 52px;
+  line-height: 52px;
+  font-weight: 600;
+  color: #ed2e46;
+  margin-bottom: 1.4em;
+  /* font-family: "Gotham Black"; */
+}
+.card-benefits .row {
+  margin-bottom: 20px;
+}
+.card-benefits .benefit h4 {
+  font-size: 16px;
+  color: #ed2e46;
+  font-weight: 600;
+}
+.card-benefits .benefit p {
+  opacity: 0.6;
+}
 
-  .card-benefits button {
-    width: 100%;
-    max-width: 30rem;
-    padding: 15px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 16px;
-    background-color: #432c46;
-    border: none;
-    text-align: center;
-  }
-  .card-benefits .button {
-      margin-top: 20px;
-    text-align: center;
-  }
-  .card-benefits button a {
-    color: white;
-  }
-  /* END SESSION 6 */
+.card-benefits button {
+  width: 100%;
+  max-width: 30rem;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 16px;
+  background-color: #432c46;
+  border: none;
+  text-align: center;
+}
+.card-benefits .button {
+  margin-top: 20px;
+  text-align: center;
+}
+.card-benefits button a {
+  color: white;
+}
+/* END SESSION 6 */
 
-  /* SKILLS CSS SESSION 7*/
+/* SKILLS CSS SESSION 7*/
 
 .because {
-    padding: 0 75px;
-    padding-top: 50px;
+  padding: 0 75px;
+  padding-top: 50px;
 }
 
 .because .title {
-    font-size: 4em;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #432c46;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #432c46;
 }
 
 .because .row {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .because button {
-    width: 20rem;
-    padding: 15px;
-    font-size: 25px;
-    font-weight: 600;
-    border-radius: 16px;
-    background-color: #432c46;
-    border: none;
-    text-align: center;
-  }
-  .because .button {
-    margin: 40px 0px;
-    text-align: center;
-  }
-  .because button a {
-    color: white;
-  }
+  width: 20rem;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 16px;
+  background-color: #432c46;
+  border: none;
+  text-align: center;
+}
+.because .button {
+  margin: 40px 0px;
+  text-align: center;
+}
+.because button a {
+  color: white;
+}
 
 .because-item {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 .because-text {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .because-text .title {
-    font-size: 2em;
-    text-transform: uppercase;
-    color: #432c46;
-    font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #432c46;
+  font-weight: 800;
 }
 
 .because-text .subtitle {
-    /* padding-top: 20px; */
-    font-size: 1.5em;
-    color: #808080;
+  /* padding-top: 20px; */
+  font-size: 1.5em;
+  color: #808080;
 }
 
-  /* SESSION 8 */
+/* SESSION 8 */
 .bussiness-items {
-    margin-bottom: 80px;
-  }
-  .col-sm:nth-child(4) {
-    margin-bottom: 80px;
-  }
-  .bussiness-items h3 {
-    margin-bottom: 30px;
-    font-weight: 600;
-    font-size: 4em;
-    color: #ed2e46;
-    margin-top: 30px;
-  }
-  .bussiness-items img {
-    width: 7rem;
-  }
-  .bussiness-items h4 {
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-top: 5px;
-    color: #ed2e46;
-  }
-  .bussiness-items p {
-    margin: 20px 15vw;
-    padding-top: 20px;
-    font-size: 1.2em;
-    color: #808080;
-  }
-  .bussiness-items a {
-    padding: 20px 60px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 16px;
-    background-color: #432c46;
-    color: white;
-    border: none;
-  }
-  /* END SESSION 8 */
+  margin-bottom: 80px;
+}
+.col-sm:nth-child(4) {
+  margin-bottom: 80px;
+}
+.bussiness-items h3 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 4em;
+  color: #ed2e46;
+  margin-top: 30px;
+}
+.bussiness-items img {
+  width: 7rem;
+}
+.bussiness-items h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 5px;
+  color: #ed2e46;
+}
+.bussiness-items p {
+  margin: 20px 15vw;
+  padding-top: 20px;
+  font-size: 1.2em;
+  color: #808080;
+}
+.bussiness-items a {
+  padding: 20px 60px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 16px;
+  background-color: #432c46;
+  color: white;
+  border: none;
+}
+/* END SESSION 8 */
 
-  /* SESSION 8 */
+/* SESSION 8 */
 .carousel {
-    margin-bottom: 80px;
-  }
-  .carousel h1 {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 3em;
-    color: #432c46;
-    font-weight: 700;
-    margin-bottom: -50px;
-    top: 0;
-    left: 0;
-  }
-  .carousel-inner {
-    background-color: whitesmoke;
-    color: black !important;
-    height: 75vh;
-    display: inline;
-  }
-  .carousel-item {
-    margin-bottom: 60px;
-    /* margin-right: 0px; */
-  }
-  .carousel-item .texto {
-    font-size: 22px;
-    color: black;
-    text-align: center;
-    margin: 100px 20% 150px 20%;
-    opacity: 0.6;
-  }
-  .carousel-item h5 {
-    color: #ed2e46;
-  }
-  .carousel-item .person {
-    display: flex;
-    justify-content: center;
-    margin-bottom: -40px;
-  }
-  .carousel-item .person img:nth-child(1) {
-    position: relative;
-    margin-left: -40px;
-    margin-right: 10px;
-    top: 0;
-    left: 0;
-  }
-  .carousel-item .person img:nth-child(2) {
-    position: absolute;
-    top: 26px;
-    right: 540px;
-    border-radius: 50%;
-  }
+  margin-bottom: 80px;
+}
+.carousel h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 3em;
+  color: #432c46;
+  font-weight: 700;
+  margin-bottom: -50px;
+  top: 0;
+  left: 0;
+}
+.carousel-inner {
+  background-color: whitesmoke;
+  color: black !important;
+  height: 75vh;
+  display: inline;
+}
+.carousel-item {
+  margin-bottom: 60px;
+  /* margin-right: 0px; */
+}
+.carousel-item .texto {
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  margin: 100px 20% 150px 20%;
+  opacity: 0.6;
+}
+.carousel-item h5 {
+  color: #ed2e46;
+}
+.carousel-item .person {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -40px;
+}
+.carousel-item .person img:nth-child(1) {
+  position: relative;
+  margin-left: -40px;
+  margin-right: 10px;
+  top: 0;
+  left: 0;
+}
+.carousel-item .person img:nth-child(2) {
+  position: absolute;
+  top: 26px;
+  right: 540px;
+  border-radius: 50%;
+}
 
-  .carousel-item .carousel-caption p {
-    opacity: 0.5;
-  }
-  .arousel-control-next-icon,
-  .arousel-control-prev-icon {
-    border-radius: 50%;
-  }
-  #carouselExampleCaptions {
-    color: black !important;
-  }
+.carousel-item .carousel-caption p {
+  opacity: 0.5;
+}
+.arousel-control-next-icon,
+.arousel-control-prev-icon {
+  border-radius: 50%;
+}
+#carouselExampleCaptions {
+  color: black !important;
+}
 
-  /* END SESSION 9 */
+/* END SESSION 9 */
 
-
-  /* SESSION FOOTER */
+/* SESSION FOOTER */
 /* .card-deck,
 .card {
   background-color: #432c46;
@@ -586,43 +575,61 @@ a:focus {
 } */
 
 .footer {
-    background-color: #432c46;
-    padding-top: 20px;
-    padding-bottom: 80px;
-    /* padding-bottom: 40px; */
+  background-color: #432c46;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  /* padding-bottom: 40px; */
 }
 
 .footer h5 {
-    color: white;
-    /* padding-bottom: 40px; */
+  color: white;
+  /* padding-bottom: 40px; */
 }
 
 .footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer .copyright {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .footer ul li a {
-    padding: 0;
-    font-weight: 100;
+  padding: 0;
+  font-weight: 100;
 }
 
 .nav-link {
-    color: white;
+  color: white;
 }
 
 .nav-item {
-    color: white;
+  color: white;
 }
-
-
+@media (max-width: 720px) {
+  .form-call input {
+    width: 55vw !important;
+    margin-left: 30px;
+  }
+  .form-call .tel {
+    width: 65vw !important;
+    margin-left: 30px;
+  }
+  .form-call .call {
+    width: 2rem !important;
+  }
+  .form-call button {
+    width: 5rem;
+    font-size: 12px !important;
+    padding: 0 !important;
+  }
+  .form-call img {
+    width: 40px;
+  }
+}
 /* Responsive CSS */
-
 @media (max-width: 768px) {
   .navbar {
     /* padding: 2px 15px; */
@@ -642,9 +649,9 @@ a:focus {
   }
 
   .banner button {
-      width: 12rem;
-      font-size: 12px;
-      padding: 15px;
+    width: 12rem;
+    font-size: 12px;
+    padding: 15px;
   }
 
   .banner p {
@@ -665,7 +672,7 @@ a:focus {
   }
 
   .info .subtitle {
-    font-size: 1.0em;
+    font-size: 1em;
   }
 
   .info .description {
@@ -692,127 +699,161 @@ a:focus {
         box-shadow: none;
     } */
 
-    .aboutc1 {
-        padding-left: 0px;
-    }
+  .aboutc1 {
+    padding-left: 0px;
+  }
 
-    .aboutc2 {
-        padding-left: 0px;
-    }
+  .aboutc2 {
+    padding-left: 0px;
+  }
 
-    .row-about {
-        padding: 20px;
-        /* margin-bottom: 3em; */
-    }
+  .row-about {
+    padding: 20px;
+    /* margin-bottom: 3em; */
+  }
 
-    .skills .title {
-        font-size: 1.5em;
-    }
+  .skills .title {
+    font-size: 1.5em;
+  }
 
-    .skill-img img{
-        max-width:70px;
-        max-height:70px;
-    }
+  .skill-img img {
+    max-width: 70px;
+    max-height: 70px;
+  }
 
-    .skill-text .title {
-        font-size: 1em;
-    }
+  .skill-text .title {
+    font-size: 1em;
+  }
 
-    .skill-text .subtitle {
-        font-size: 0.8em;
-    }
+  .skill-text .subtitle {
+    font-size: 0.8em;
+  }
 
-    .skills button {
-        width: 15rem;
-        padding: 15px;
-        font-size: 12px;
-    }
+  .skills button {
+    width: 15rem;
+    padding: 15px;
+    font-size: 12px;
+  }
 
-    .card-benefits .title {
-        font-size: 1.6em;
-        line-height: 28px;
-    }
+  .card-benefits .title {
+    font-size: 1.6em;
+    line-height: 28px;
+  }
 
-    .card-benefits button {
-        max-width: 15rem;
-        padding: 8px;
-        font-size: 13px;
-    }
+  .card-benefits button {
+    max-width: 15rem;
+    padding: 8px;
+    font-size: 13px;
+  }
 
-    .because .title {
-        font-size: 2.2em;
-    }
+  .because .title {
+    font-size: 2.2em;
+  }
 
-    .because .because-item img {
-        max-width:90px;
-        max-height:90px;
-    }
+  .because .because-item img {
+    max-width: 90px;
+    max-height: 90px;
+  }
 
-    .because-text .title {
-        font-size: 1.3em;
-    }
+  .because-text .title {
+    font-size: 1.3em;
+  }
 
-    .because-text .subtitle {
-        font-size: 0.8em;
-    }
+  .because-text .subtitle {
+    font-size: 0.8em;
+  }
 
-    .because button {
-        width: 13rem;
-        padding: 10px;
-        font-size: 18px;
-    }
+  .because button {
+    width: 13rem;
+    padding: 10px;
+    font-size: 18px;
+  }
 
-    .bussiness-items h3 {
-        font-size: 2.5em;
-      }
+  .bussiness-items h3 {
+    font-size: 2.5em;
+  }
 
-    .bussiness-items img {
-        width: 6rem;
-    }
+  .bussiness-items img {
+    width: 6rem;
+  }
 
-    .bussiness-items p {
-        font-size: 1em;
-    }
+  .bussiness-items p {
+    font-size: 1em;
+  }
 
-    .bussiness-items a {
-        padding: 15px 40px;
-        font-size: 15px;
-        font-weight: 600;
-    }
+  .bussiness-items a {
+    padding: 15px 40px;
+    font-size: 15px;
+    font-weight: 600;
+  }
 
-    .carousel-item .texto {
-        font-size: 0.7em;
-    }
+  .carousel-item .texto {
+    font-size: 0.7em;
+  }
 
-    .carousel-caption p{
-        margin-bottom: 0;
-        font-size: 0.8em;
-        margin-top: 5px;
-      }
+  .carousel-caption p {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
 
-      .person img{
-          width: 50px;
-      }
+  .person img {
+    width: 50px;
+  }
 
-      .person h5 {
-        font-size: 0.9em;
-    }
+  .person h5 {
+    font-size: 0.9em;
+  }
 
-    .carousel-item .texto {
-        margin-bottom: 100px;
-    }
+  .carousel-item .texto {
+    margin-bottom: 100px;
+  }
 
-    .carousel h1 {
-        font-size: 2em;
-    }
+  .carousel h1 {
+    font-size: 2em;
+  }
 
-    .about .form-call input {
-        padding: 3px;
-    }
+  .about .form-call input {
+    padding: 3px;
+  }
 
-    .about .form-call a img {
-        width: 2rem;
-    }
+  .about .form-call a img {
+    width: 2rem;
+  }
+
+  .form-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-call form {
+    display: flex;
+  }
+  .form-call form input {
+    width: 16rem;
+    height: 3.5em;
+    font-size: 13px;
+  }
+  .form-call form button {
+    padding: 5px 20px;
+    height: 3em;
+    border: none;
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 14px;
+    background-color: #ed2e46;
+    color: #fff;
+  }
+  .form-call .tel {
+    width: 18rem;
+  }
+  .form-call .call {
+    background-color: #fff;
+    margin-top: -60px;
+    margin-left: 10px;
+    padding: 0px;
+    height: 0px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -901,10 +942,10 @@ a:focus {
 }
 
 @media (min-width: 1950px) {
-    .App {
-        margin-left: 15%;
-        margin-right: 15%;
-    }
+  .App {
+    margin-left: 15%;
+    margin-right: 15%;
   }
+}
 
 /* END */
