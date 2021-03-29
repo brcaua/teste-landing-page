@@ -134,6 +134,7 @@ export default function CallFormv1() {
             console.log("RESPONSE", response);
 
             setLoading(false);
+<<<<<<< HEAD
             setResponse(() => {
               Swal.fire({
                 icon: "success",
@@ -141,6 +142,11 @@ export default function CallFormv1() {
                   '"Solicitação enviada com sucesso. Você receberá uma chamada em instantes!"',
               });
             });
+=======
+            alert(
+                "Solicitação enviada com sucesso. Você receberá uma chamada em instantes!"
+            )
+>>>>>>> cf0d19ea247e9917ae5c1b7a24850ee38182cd93
           } catch (err) {
             setLoading(false);
             setResponse(() => {
@@ -153,6 +159,7 @@ export default function CallFormv1() {
           }
         })
         .catch((err) => {
+<<<<<<< HEAD
           setResponse(() => {
             Swal.fire({
               icon: "error",
@@ -160,6 +167,11 @@ export default function CallFormv1() {
                 "Desculpe, não conseguimos completar sua solicitação, tente mais tarde!",
             });
           });
+=======
+            alert(
+                "Desculpe, não conseguimos completar sua solicitação, tente mais tarde!"
+            )
+>>>>>>> cf0d19ea247e9917ae5c1b7a24850ee38182cd93
         });
     }
   };
