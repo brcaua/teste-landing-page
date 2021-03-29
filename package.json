@@ -14,7 +14,6 @@
     "chokidar": "^3.5.1",
     "jquery": "^3.6.0",
     "react": "^17.0.1",
-    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "react-google-invisible-recaptcha": "^0.2.11",
     "react-google-recaptcha": "^2.1.0",
@@ -22,6 +21,8 @@
     "react-maskinput": "^3.2.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.2.1",
+    "sweetalert2": "^10.15.7",
+    "sweetalert2-react-content": "^3.3.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

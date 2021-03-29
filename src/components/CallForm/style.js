@@ -45,6 +45,7 @@ export const Input = styled.input`
 `;
 
 export const InputStyle = {
+  
   padding: "10px 12px",
   width: "100%",
   marginBottom: "15px",

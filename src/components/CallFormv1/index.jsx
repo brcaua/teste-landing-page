@@ -4,6 +4,7 @@ import MaskInput from "react-maskinput";
 import $ from "jquery";
 import "./style.css";
 import phoneImg from "../../assets/phone.svg";
+import Swal from "sweetalert2";
 
 const SITE_KEY = "6LdyTnsaAAAAAOhcw2-Hltlbtl-WkWV38ad5LptS";
 
@@ -99,7 +100,10 @@ export default function CallFormv1() {
 
     if (event.target.checkValidity()) {
       if (event.target[1].value.length > 13) {
-        alert("O campo de telefone deve conter 11 números");
+        Swal.fire({
+          icon: "warning",
+          text: "O campo de telefone deve ter 11 números!",
+        });
         return;
       }
 
@@ -130,22 +134,32 @@ export default function CallFormv1() {
             console.log("RESPONSE", response);
 
             setLoading(false);
-            setResponse(
-              "Solicitação enviada com sucesso. Você receberá uma chamada em instantes!"
-            );
+            setResponse(() => {
+              Swal.fire({
+                icon: "success",
+                text:
+                  '"Solicitação enviada com sucesso. Você receberá uma chamada em instantes!"',
+              });
+            });
           } catch (err) {
             setLoading(false);
-            setResponse(
-              alert(
-                "Desculpe, não conseguimos completar sua solicitação, tente mais tarde!"
-              )
-            );
+            setResponse(() => {
+              Swal.fire({
+                icon: "error",
+                text:
+                  "Desculpe, não conseguimos completar sua solicitação, tente mais tarde!",
+              });
+            });
           }
         })
         .catch((err) => {
-          setResponse(
-            "Desculpe, não conseguimos completar sua solicitação, tente mais tarde!"
-          );
+          setResponse(() => {
+            Swal.fire({
+              icon: "error",
+              text:
+                "Desculpe, não conseguimos completar sua solicitação, tente mais tarde!",
+            });
+          });
         });
     }
   };
@@ -273,6 +287,8 @@ export default function CallFormv1() {
               disabled={loading}
               class="btn call pull-right"
               type="submit"
+              data-toggle="modal"
+              data-target="#exampleModal"
             >
               <img width="50px" height="50px" src={phoneImg} alt="telefone" />
             </button>

@@ -66,7 +66,7 @@ export default function CallForm() {
       console.log("dispatch an action");
 
       window.grecaptcha
-        .execute(SITE_KEY, { action: "submit" })
+        .execute({ SITE_KEY }, { action: "submit" })
         .then(async (token) => {
           console.log("Este é o Token", token);
 
