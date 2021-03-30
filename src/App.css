@@ -1,10 +1,7 @@
 * {
-  /* margin: 0;
+  margin: 0;
   padding: 0;
-  outline: none;
   box-sizing: border-box;
-  font-family: "Gotham", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
 }
 
 a {
@@ -12,25 +9,16 @@ a {
 }
 
 .App {
-  /* text-align: center;
-  background-color: #ffffff;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white; */
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  overflow-x: hidden;
   min-height: 100vh;
 }
 
 body {
-  /* color: #797979; */
+  overflow-x: hidden;
   background: #ffffff;
   font-family: "Gotham-Medium";
-  /* letter-spacing: .1rem; */
 }
 
 a:hover,
@@ -41,35 +29,20 @@ a:focus {
   text-decoration: none;
 }
 
-/**********************************/
-/*********** Nav Bar CSS **********/
-/**********************************/
 .navbar {
-  /* position: absolute; */
   width: 100%;
-  /* top: 60px; */
   padding: 2px 15px;
   background: rgba(255, 0, 0, 0.6) !important;
   z-index: 9;
 }
 
-/* .navbar.nav-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-} */
-
 .navbar .navbar-brand {
   margin: 0;
   color: #ffffff;
-  /* font-size: 45px; */
   line-height: 0px;
-  /* font-weight: 600; */
 }
 
 .navbar .navbar-brand img {
-  /* max-width: 100%; */
   max-height: 25px;
 }
 
@@ -77,7 +50,6 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  /* padding: 10px 10px 8px 10px; */
   color: #ffffff;
 }
 
@@ -87,8 +59,6 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  /* background: rgba(256, 256, 256, .1); */
-  /* transition: none; */
 }
 
 .navbar .dropdown-menu {
@@ -107,18 +77,14 @@ a:focus {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 30px;
-  /* margin-left: 20px; */
-  background-image: url("./assets/banner.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   margin-top: -100px;
 }
-
+.banner #bannerImg {
+  position: absolute;
+  width: 95%;
+  height: 60vw;
+}
 .banner .title {
-  /* font-size: 6em; */
-  /* font-weight: 100!important; */
-  /* color: #ed2e46; */
   align-items: flex-start;
   margin-top: 180px;
   margin-bottom: 140px;
@@ -170,7 +136,6 @@ a:focus {
   text-transform: uppercase;
   font-weight: 900;
   color: #432c46;
-  /* letter-spacing: .2rem; */
 }
 
 .info .subtitle {
@@ -189,10 +154,8 @@ a:focus {
 
 .about {
   padding: 0;
-  /* margin-bottom: 3em; */
 }
 .about .grid-obs {
-  /* margin-top: -15px; */
 }
 .row-about {
   margin: 0;
@@ -208,10 +171,13 @@ a:focus {
 }
 .about .description {
   /* padding-top: 0px; */
-  font-size: 1.1em;
+  text-align: justify;
+  font-size: 1.4rem;
+  margin-right: 4em;
+  margin-left: 0px;
   color: #808080;
-  /* font-family: "Gotham"; */
-  opacity: 0.8;
+  font-weight: normal;
+  opacity: 0.9;
 }
 
 .aboutc2 {
@@ -225,23 +191,12 @@ a:focus {
 }
 .about .section-header p {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 34px;
   color: #432c46;
   /* margin-top: 20px; */
 }
-
-/* .about .form-call input {
-  padding: 8px;
-  width: 80%;
-  border: 1px solid #808080;
-  opacity: 0.8;
-}
-.about .form-call a img {
-  width: 50px;
-  margin-left: 10px;
-} */
 
 .form-call {
   display: block;
@@ -360,12 +315,13 @@ a:focus {
   margin-bottom: 20px;
 }
 .card-benefits .benefit h4 {
-  font-size: 16px;
+  font-size: 1rem;
   color: #ed2e46;
   font-weight: 600;
 }
 .card-benefits .benefit p {
   opacity: 0.6;
+  font-size: 1rem;
 }
 
 .card-benefits button {
@@ -608,7 +564,64 @@ a:focus {
 .nav-item {
   color: white;
 }
+
 @media (max-width: 720px) {
+  .banner {
+    flex-direction: column;
+    /* margin-left: 20px; */
+    padding: 25px 20px 25px;
+    margin-bottom: 30px;
+  }
+  .banner #bannerImg {
+    position: absolute;
+    width: 95vw;
+    height: 60vw;
+    margin-top: 70px;
+  }
+  .banner .title {
+    font-size: 0.6em;
+    /* font-weight: 100!important; */
+    /* color: #ed2e46; */
+    margin-top: 130px;
+    margin-bottom: 0px;
+  }
+  .banner .title span {
+    font-weight: 550;
+    color: #432c46;
+  }
+  .banner .banner-contact {
+    margin-top: -50px;
+    margin-bottom: 0px;
+  }
+  .banner .banner-contact p {
+    font-size: 1.3rem;
+    line-height: 24px;
+    color: #432c46;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .banner .banner-contact button {
+    width: 8rem;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 16px;
+    background-color: #432c46;
+    border: none;
+  }
+  .about .title p:nth-child(1) {
+    text-align: center;
+    line-height: 32px;
+  }
+  .about .title p:nth-child(2) {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .aboutc2 p:nth-child(1) {
+    margin-top: 30px;
+    text-align: center;
+  }
+
   .form-call input {
     width: 55vw !important;
     margin-left: 30px;
@@ -635,13 +648,15 @@ a:focus {
     /* padding: 2px 15px; */
     /* background: #1d2434 !important; */
   }
-
   .banner {
-    padding: 0px 15px;
+    margin-top: -130px;
+    margin-bottom: -70px;
   }
-
+  .banner #bannerImg {
+    width: 96vw;
+  }
   .banner .title img {
-    width: 20em;
+    width: 50vw;
   }
 
   .banner .title {
@@ -649,9 +664,9 @@ a:focus {
   }
 
   .banner button {
-    width: 12rem;
-    font-size: 12px;
-    padding: 15px;
+    width: 14rem;
+    font-size: 16px;
+    padding: 20px;
   }
 
   .banner p {
@@ -730,20 +745,24 @@ a:focus {
   }
 
   .skills button {
-    width: 15rem;
-    padding: 15px;
-    font-size: 12px;
+    max-width: 20rem;
+    padding: 20px;
+    font-size: 14px;
   }
-
+  .benefit {
+    padding: 30px 10px 10px 15px;
+    height: 150px;
+    margin: auto;
+  }
   .card-benefits .title {
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 28px;
   }
 
   .card-benefits button {
-    max-width: 15rem;
-    padding: 8px;
-    font-size: 13px;
+    max-width: 20rem;
+    padding: 20px;
+    font-size: 14px;
   }
 
   .because .title {
@@ -857,12 +876,34 @@ a:focus {
 }
 
 @media (min-width: 769px) {
+  .banner #bannerImg {
+    width: 97vw;
+  }
+  .banner .title img {
+    width: 30em;
+    margin-bottom: -10px;
+  }
+  .banner .banner-contact p {
+    font-size: 3em;
+  }
+  .banner .banner-contact button {
+    width: 16em;
+  }
+
+  .about {
+    margin-top: -50px;
+  }
+  .about .title p:nth-child(1) {
+    line-height: 55px;
+    margin-top: -20px;
+  }
+
   .info {
     padding: 20px 15px;
   }
 
   .info .title {
-    font-size: 2.5em;
+    font-size: 2.6em;
   }
 
   .info .subtitle {
@@ -907,8 +948,26 @@ a:focus {
 
   .banner {
     min-height: 900px;
-    padding: 0px 75px;
+    padding: 0px 40px;
+    margin-bottom: 70px;
   }
+  .banner .title img {
+    width: 40em;
+    margin-left: 30px;
+  }
+  .banner .banner-contact {
+    margin-left: 30px;
+  }
+  .banner .banner-contact p {
+    font-size: 4em;
+    line-height: 72px;
+  }
+  .banner .banner-contact button {
+    width: 30rem;
+    padding: 30px;
+    font-size: 28px;
+  }
+
   .info .description {
     padding-top: 20px;
     font-size: 1em;
@@ -935,9 +994,15 @@ a:focus {
     padding-left: 75px;
     /* margin-bottom: 3em; */
   }
-
+  .aboutc1 .description {
+    font-size: 1.4em;
+    margin: 0px 16px;
+  }
   .aboutc2 {
     padding: 50px 75px 10px 5px;
+  }
+  .aboutc2 .section-header p {
+    font-size: 2rem;
   }
 }
 

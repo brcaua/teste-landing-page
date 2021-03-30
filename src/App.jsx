@@ -1,8 +1,6 @@
-// import CallForm from "./components/CallForm";
 import "./App.css";
-// import CallForm from "./components/CallForm";
-// import ExampleComponent from "./components/ExampleComponent";
 import logo_tech from "./assets/pontaltech.svg";
+import bannerv1 from "./assets/bannerv1.png";
 import logo_play from "./assets/logo_play.png";
 import phone from "./assets/phone.svg";
 import shape_45 from "./assets/Shape_45.png";
@@ -28,7 +26,7 @@ function App() {
         <div class="container-fluid">
           <a href="index.html" class="navbar-brand">
             <span>
-              <img src={logo_tech} />
+              <img src={logo_tech} alt="logo" />
             </span>
           </a>
           <button
@@ -74,11 +72,13 @@ function App() {
         </div>
       </div>
       {/* 2ª Sessão */}
+
       <div className="banner">
+        <img id="bannerImg" src={bannerv1} alt="banner" />
         <div class="banner-card">
           <div class="title">
             {/* <span>pontal</span>play! */}
-            <img src={logo_play} />
+            <img src={logo_play} alt="logo" />
           </div>
           <div class="banner-contact">
             <p>
@@ -109,11 +109,6 @@ function App() {
               <p>Receba uma ligação do nosso agente virtual inteligente!</p>
             </div>
             <div class="form-call">
-              {/* <input type="tel" placeholder="Como você se chama?" required />
-              <a href="#">
-                {" "}
-                <img src={phone} alt="" />
-              </a> */}
               <CallFormv1 />
             </div>
           </div>
@@ -437,7 +432,7 @@ function App() {
             </p>
             <div class="carousel-caption work">
               <div class="person">
-                <img src={avatar} alt="" width="70px" />
+                <img src={avatar} alt="pessoa" width="70px" />
                 <h5>Marcos Guerra</h5>
               </div>
               <p>Programador</p>
@@ -488,69 +483,11 @@ function App() {
         </button>
       </div>
 
-      {/* Footer */}
-      {/* <div class="card-deck">
-        <div class="row">
-            <div class="card col-lg-3 col-md-6">
-            <div class="card-body" align="center">
-                <img src={logo_tech} alt="" width="200px" />
-            </div>
-            </div>
-            <div class="card col-lg-3 col-md-6">
-            <div class="card-body">
-                <h5 class="card-title">PRODUTOS</h5>
-                <a class="card-text" href="#">
-                Cultura
-                </a>
-                <a class="card-text" href="#">
-                Carreiras
-                </a>
-                <a class="card-text" href="#">
-                Endereço
-                </a>
-                <a class="card-text" href="#">
-                Contato
-                </a>
-            </div>
-            </div>
-            <div class="card col-lg-3 col-md-6">
-            <div class="card-body">
-                <h5 class="card-title">SOBRE NÓS</h5>
-                <a class="card-text" href="#">
-                Cultura
-                </a>
-                <a class="card-text" href="#">
-                Carreiras
-                </a>
-                <a class="card-text" href="#">
-                Endereço
-                </a>
-                <a class="card-text" href="#">
-                Contato
-                </a>
-            </div>
-            </div>
-            <div class="card col-lg-3 col-md-6">
-            <div class="card-body">
-                <a class="card-text" href="#">
-                +55 (11) 99919-8973
-                </a>
-                <a class="card-text" href="#">
-                +55 (11) 2830-5400
-                </a>
-                <p class="card-text" href="#">
-                | Copyright 2019 Pontaltech <br />| Todos os direitos reservados
-                </p>
-            </div>
-            </div>
-        </div>
-      </div> */}
-
       <div class="footer">
         <div class="row">
           <div class="col-lg-3 col-md-6" align="left">
             <div class="card-body">
-              <img src={logo_tech} alt="" width="200px" />
+              <img src={logo_tech} alt="logo" width="200px" />
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
