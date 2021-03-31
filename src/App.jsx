@@ -44,29 +44,22 @@ function App() {
           >
             <div class="navbar-nav ml-auto">
               <div class="nav-item">
-                <a href="#" class="nav-item nav-link active">
+                <a href=".navbar" class="nav-item nav-link active">
                   Conheça e viva essa experiência
                 </a>
               </div>
-              <a href="#" class="nav-item nav-link">
+              <a href=".navbar" class="nav-item nav-link">
                 Nossas soluções
               </a>
-              <a href="#" class="nav-item nav-link">
+              <a href=".navbar" class="nav-item nav-link">
                 Benefícios
               </a>
-              <a href="#" class="nav-item nav-link">
+              <a href=".navbar" class="nav-item nav-link">
                 Perguntas frequentes
               </a>
-              <a href="#" class="nav-item nav-link">
+              <a href=".navbar" class="nav-item nav-link">
                 Contato
               </a>
-              {/* <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu">
-                                    <a href="blog.html" class="dropdown-item">Blog Page</a>
-                                    <a href="single.html" class="dropdown-item">Single Page</a>
-                                </div>
-                            </div> */}
             </div>
           </div>
         </div>
@@ -85,8 +78,8 @@ function App() {
               O AGENTE VIRTUAL <br></br> DA SUA MARCA
               <br></br>
             </p>
-            <button class="btn-about">
-              <a href="#">QUERO SABER MAIS</a>
+            <button class="btn-about" type="button" cursor="pointer">
+              QUERO SABER MAIS
             </button>
           </div>
         </div>
@@ -142,7 +135,7 @@ function App() {
           <div class="col-lg-3 col-md-6">
             <div class="skill-item">
               <div class="skill-img">
-                <img src={shape_45} alt="Team Image" />
+                <img src={shape_45} alt="Team" />
               </div>
               <div class="skill-text">
                 <h2 class="title">
@@ -157,7 +150,7 @@ function App() {
           <div class="col-lg-3 col-md-6">
             <div class="skill-item">
               <div class="skill-img">
-                <img src={shape_43} alt="Team Image" />
+                <img src={shape_43} alt="Team" />
               </div>
               <div class="skill-text">
                 <h2 class="title">
@@ -173,7 +166,7 @@ function App() {
           <div class="col-lg-3 col-md-6">
             <div class="skill-item">
               <div class="skill-img">
-                <img src={shape_42} alt="Team Image" />
+                <img src={shape_42} alt="Team" />
               </div>
               <div class="skill-text">
                 <h2 class="title">Transbordo para o atendimento humano</h2>
@@ -187,7 +180,7 @@ function App() {
           <div class="col-lg-3 col-md-6">
             <div class="skill-item">
               <div class="skill-img">
-                <img src={shape_44} alt="Team Image" />
+                <img src={shape_44} alt="Team" />
               </div>
               <div class="skill-text">
                 <h2 class="title">Integração com seus sistemas</h2>
@@ -200,9 +193,7 @@ function App() {
           </div>
         </div>
         <div class="button">
-          <button class="btn-about">
-            <a href="#">QUERO UM AGENTE VIRTUAL</a>
-          </button>
+          <button class="btn-about">QUERO UM AGENTE VIRTUAL</button>
         </div>
       </div>
       {/* SESSION 6 - Beneficios */}
@@ -279,8 +270,8 @@ function App() {
           </div>
 
           <div class="button">
-            <button class="btn-about">
-              <a href="#">REVOLUCIONE SEU ATENDIMENTO</a>
+            <button class="btn-about" type="button" cursor="pointer">
+              REVOLUCIONE SEU ATENDIMENTO
             </button>
           </div>
         </div>
@@ -295,7 +286,7 @@ function App() {
           <div class="col-lg-6 col-md-6">
             <div class="because-item">
               <div class="because-img">
-                <img src={because2} alt="Team Image" />
+                <img src={because2} alt="Team" />
               </div>
               <div class="because-text">
                 <h2 class="title">Não desligamos chamadas</h2>
@@ -309,7 +300,7 @@ function App() {
           <div class="col-lg-6 col-md-6">
             <div class="because-item">
               <div class="because-img">
-                <img src={because3} alt="Team Image" />
+                <img src={because3} alt="Team" />
               </div>
               <div class="because-text">
                 <h2 class="title">
@@ -325,7 +316,7 @@ function App() {
           <div class="col-lg-6 col-md-6">
             <div class="because-item">
               <div class="because-img">
-                <img src={because1} alt="Team Image" />
+                <img src={because1} alt="Team" />
               </div>
               <div class="because-text">
                 <h2 class="title">Muito mais autonomia para você</h2>
@@ -339,7 +330,7 @@ function App() {
           <div class="col-lg-6 col-md-6">
             <div class="because-item">
               <div class="because-img">
-                <img src={because4} alt="Team Image" />
+                <img src={because4} alt="Team" />
               </div>
               <div class="because-text">
                 <h2 class="title">Conformidade com a Lgpd</h2>
@@ -352,8 +343,8 @@ function App() {
           </div>
         </div>
         <div class="button">
-          <button class="btn-about">
-            <a href="#">SAIBA MAIS</a>
+          <button class="btn-about" type="button" cursor="pointer">
+            SAIBA MAIS
           </button>
         </div>
       </div>
@@ -389,7 +380,9 @@ function App() {
               <br></br> de exames e agendar consultas com seu agente virtual
             </p>
           </div>
-          <a href="#">QUERO SABER MAIS!</a>
+          <a href=".banner" rel="noreferrer">
+            QUERO SABER MAIS!
+          </a>
         </div>
       </div>
 
@@ -503,6 +496,7 @@ function App() {
                   <a
                     class="nav-link"
                     target="_blank"
+                    rel="noreferrer"
                     href="https://www.pontaltech.com.br/pontal-gestor/"
                   >
                     pontalgestor
@@ -518,6 +512,7 @@ function App() {
                 <li class="nav-item">
                   <a
                     class="nav-link"
+                    rel="noreferrer"
                     target="_blank"
                     href="https://www.pontaltech.com.br/cultura/"
                   >
@@ -528,6 +523,7 @@ function App() {
                   <a
                     class="nav-link"
                     target="_blank"
+                    rel="noreferrer"
                     href="https://jobs.kenoby.com/pontaltech"
                   >
                     Carreira
@@ -536,6 +532,7 @@ function App() {
                 <li class="nav-item">
                   <a
                     class="nav-link"
+                    rel="noreferrer"
                     target="_blank"
                     href="https://www.pontaltech.com.br/contato/"
                   >
@@ -545,6 +542,7 @@ function App() {
                 <li class="nav-item">
                   <a
                     class="nav-link"
+                    rel="noreferrer"
                     target="_blank"
                     href="https://www.pontaltech.com.br/contato/"
                   >

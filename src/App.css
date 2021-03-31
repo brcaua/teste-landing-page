@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
+button {
+  color: white;
 }
 
 .App {
@@ -115,7 +115,7 @@ a:focus {
   background-color: #432c46;
   border: none;
 }
-.banner button a {
+.banner button {
   color: white;
 }
 
@@ -149,9 +149,7 @@ a:focus {
   font-size: 1em;
   color: #808080;
 }
-
 /*  ABOUT CSS */
-
 .about {
   padding: 0;
 }
@@ -179,12 +177,10 @@ a:focus {
   font-weight: normal;
   opacity: 0.9;
 }
-
 .aboutc2 {
   background-image: linear-gradient(to bottom, white 30%, #8080801e);
   /* height: 215px; */
 }
-
 .about .section-header,
 .about .form-call {
   margin-left: 0px;
@@ -197,7 +193,6 @@ a:focus {
   color: #432c46;
   /* margin-top: 20px; */
 }
-
 .form-call {
   display: block;
   flex-wrap: wrap;
@@ -228,27 +223,21 @@ a:focus {
   padding: 0px;
   height: 0px;
 }
-
 /*  END CSS ABOUT */
-
 /* SKILLS CSS SESSION 5*/
-
 .skills {
   padding: 0 75px;
   padding-top: 50px;
 }
-
 .skills .title {
   font-size: 2.5em;
   text-transform: uppercase;
   font-weight: 900;
   color: #432c46;
 }
-
 .skills .row {
   padding-top: 20px;
 }
-
 .skills button {
   width: 24rem;
   padding: 15px;
@@ -263,33 +252,27 @@ a:focus {
   margin-top: 20px;
   text-align: center;
 }
-.skills button a {
+.skills button {
   color: white;
 }
-
 .skill-item {
   text-align: center;
   padding: 10px;
 }
-
 .skill-text {
   margin-top: 15px;
 }
-
 .skill-text .title {
   font-size: 1.5em;
   text-transform: uppercase;
   color: #ed2e46;
 }
-
 .skill-text .subtitle {
   /* padding-top: 20px; */
   font-size: 1em;
   color: #808080;
 }
-
 /* START SESSION 6 */
-
 .card-benefits {
   margin: 30px 0px;
   padding: 30px 75px;
@@ -339,7 +322,7 @@ a:focus {
   margin-top: 20px;
   text-align: center;
 }
-.card-benefits button a {
+.card-benefits button {
   color: white;
 }
 /* END SESSION 6 */
@@ -376,7 +359,7 @@ a:focus {
   margin: 40px 0px;
   text-align: center;
 }
-.because button a {
+.because button {
   color: white;
 }
 
@@ -464,7 +447,6 @@ a:focus {
 }
 .carousel-item {
   margin-bottom: 60px;
-  /* margin-right: 0px; */
 }
 .carousel-item .texto {
   font-size: 22px;
@@ -506,30 +488,6 @@ a:focus {
   color: black !important;
 }
 
-/* END SESSION 9 */
-
-/* SESSION FOOTER */
-/* .card-deck,
-.card {
-  background-color: #432c46;
-  color: white;
-  border: none;
-  width: 100vw;
-}
-.card-body {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-.card-body a {
-  display: flex;
-  color: white;
-}
-.card-body p {
-  margin-top: 20px;
-  font-size: 12px;
-} */
-
 .footer {
   background-color: #432c46;
   padding-top: 20px;
@@ -564,13 +522,46 @@ a:focus {
 .nav-item {
   color: white;
 }
-
+@media (max-width: 320px) {
+  .banner .banner-contact p {
+    font-size: 1em !important;
+    line-height: 20px !important;
+    color: #432c46;
+    font-weight: 700;
+    margin-bottom: 5px !important;
+  }
+  .banner .banner-contact button {
+    width: 6rem !important;
+    padding: 6px !important;
+    font-size: 6px !important;
+  }
+}
+@media (max-width: 375px) {
+  .banner .banner-contact p {
+    font-size: 1.2em !important;
+    line-height: 20px !important;
+    color: #432c46;
+    font-weight: 700;
+    margin-bottom: 10px !important;
+  }
+}
+@media (max-width: 520px) {
+  .about .title p:nth-child(1) {
+    margin-top: 80px !important;
+  }
+  .banner {
+    margin-top: -150px !important;
+    height: auto;
+  }
+  .banner .title img {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 720px) {
   .banner {
     flex-direction: column;
     /* margin-left: 20px; */
     padding: 25px 20px 25px;
-    margin-bottom: 30px;
   }
   .banner #bannerImg {
     position: absolute;
@@ -583,7 +574,7 @@ a:focus {
     /* font-weight: 100!important; */
     /* color: #ed2e46; */
     margin-top: 130px;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
   }
   .banner .title span {
     font-weight: 550;
@@ -612,6 +603,7 @@ a:focus {
   .about .title p:nth-child(1) {
     text-align: center;
     line-height: 32px;
+    margin-top: 150px;
   }
   .about .title p:nth-child(2) {
     text-align: center;
@@ -672,10 +664,6 @@ a:focus {
   .banner p {
     font-size: 1.7em;
     line-height: 30px;
-    /* color: #432c46;
-    font-weight: 700;
-    margin-bottom: 40px;
-    margin-top: 40px; */
   }
 
   .info {
@@ -709,7 +697,7 @@ a:focus {
   /* .navbar a.nav-link {
         padding: 5px;
     }
-    
+
     .navbar .dropdown-menu {
         box-shadow: none;
     } */
@@ -928,7 +916,7 @@ a:focus {
   }
 }
 
-@media (min-width: 1115px) {
+@media (min-width: 1250px) {
   .navbar {
     padding: 4px 60px;
     z-index: 9;
@@ -1005,12 +993,88 @@ a:focus {
     font-size: 2rem;
   }
 }
-
-@media (min-width: 1950px) {
+@media (min-width: 1568px) {
+  .banner {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 1740px) {
+  .banner {
+    margin-bottom: 180px;
+  }
+}
+@media (min-width: 1920px) {
   .App {
     margin-left: 15%;
     margin-right: 15%;
   }
+  .banner {
+    margin-bottom: 1rem;
+  }
+  .banner #bannerImg {
+    width: 68.5%;
+    height: auto;
+  }
+  .about .description {
+    margin-left: 0px;
+    margin-right: 70px;
+  }
+  .skills button {
+    width: 22rem;
+    padding: 20px;
+  }
+  .card-benefits button {
+    width: 24rem;
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+  .because button {
+    width: 20rem;
+    padding: 20px;
+    font-size: 1.5rem;
+  }
 }
-
+@media (min-width: 2090px) {
+  .banner {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 2280px) {
+  .banner {
+    margin-bottom: 70px;
+  }
+  .banner .title img {
+    width: 42rem;
+  }
+  .banner .title img,
+  .banner-contact {
+    margin-left: 40px !important;
+  }
+  .banner-contact p {
+    font-size: 4.4rem !important;
+  }
+  .aboutc1 p:nth-child(1) {
+    font-size: 2.6rem !important;
+  }
+}
+@media (min-width: 2400px) {
+  .banner {
+    margin-bottom: 120px;
+  }
+  .banner .title img {
+    width: 52rem;
+  }
+  .banner .title img,
+  .banner-contact {
+    padding: 30px !important;
+  }
+  .banner-contact p {
+    font-size: 4.8rem !important;
+  }
+  .banner-contact button {
+    width: 36rem !important;
+    padding: 34px !important;
+    font-size: 32px !important;
+  }
+}
 /* END */
